@@ -1,26 +1,93 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --surface: #f4f8fc;
+  --surface-elevated: #ffffff;
+  --surface-panel: #e9f0f7;
+  --surface-muted: #d6e2ee;
+  --surface-soft: rgba(8, 19, 31, 0.04);
+  --border-subtle: rgba(104, 129, 153, 0.28);
+  --text-primary: #08131f;
+  --text-secondary: #4f6477;
+  --text-muted: #71879a;
+  --accent: #3faf35;
+  --accent-strong: #238e24;
+  --accent-ink: #08131f;
+  --accent-soft: #e4f6da;
+  --hero-start: #dbeafe;
+  --hero-end: #f8fbff;
+  --hero-glow-blue: rgba(42, 106, 245, 0.18);
+  --hero-glow-green: rgba(167, 255, 60, 0.18);
+  --shadow-soft: 0 24px 80px rgba(8, 19, 31, 0.10);
+  --shadow-panel: 0 20px 60px rgba(8, 19, 31, 0.14);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.dark {
+  --surface: #07111f;
+  --surface-elevated: #0d1b2f;
+  --surface-panel: #10233d;
+  --surface-muted: #163252;
+  --surface-soft: rgba(255, 255, 255, 0.04);
+  --border-subtle: rgba(90, 122, 155, 0.34);
+  --text-primary: #f5fbff;
+  --text-secondary: #a6bdcf;
+  --text-muted: #6d86a0;
+  --accent: #a7ff3c;
+  --accent-strong: #c8ff7a;
+  --accent-ink: #08131f;
+  --accent-soft: #19361a;
+  --hero-start: #0e1f3b;
+  --hero-end: #050a13;
+  --hero-glow-blue: rgba(42, 106, 245, 0.24);
+  --hero-glow-green: rgba(167, 255, 60, 0.16);
+  --shadow-soft: 0 32px 120px rgba(0, 0, 0, 0.45);
+  --shadow-panel: 0 28px 90px rgba(0, 0, 0, 0.55);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  html,
+  body {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .font-body {
+    font-family: var(--font-geist), sans-serif;
+  }
+
+  .font-heading {
+    font-family: var(--font-anton), sans-serif;
+  }
+
+  .font-caption {
+    font-family: var(--font-ibm-plex-mono), monospace;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  .bg-hero {
+    background-image:
+      radial-gradient(circle at 82% 12%, var(--hero-glow-green), transparent 20%),
+      radial-gradient(circle at 74% 8%, var(--hero-glow-blue), transparent 26%),
+      linear-gradient(180deg, var(--hero-start), var(--hero-end));
+  }
+
+  .surface-card {
+    background-color: var(--surface-soft);
+    border: 1px solid var(--border-subtle);
+    box-shadow: var(--shadow-soft);
+  }
+
+  .surface-panel {
+    background-color: var(--surface-elevated);
+    border: 1px solid var(--border-subtle);
+    box-shadow: var(--shadow-panel);
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
 }

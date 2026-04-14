@@ -1,0 +1,2318 @@
+{
+  "version": "2.10",
+  "children": [
+    {
+      "type": "frame",
+      "id": "bi8Au",
+      "x": 0,
+      "y": 0,
+      "name": "Frame",
+      "clip": true,
+      "width": 800,
+      "height": 600,
+      "fill": "#FFFFFF",
+      "layout": "none"
+    },
+    {
+      "type": "frame",
+      "id": "wopK7",
+      "x": 40,
+      "y": 40,
+      "name": "RunAI Landing",
+      "theme": {
+        "mode": "dark"
+      },
+      "width": 1440,
+      "height": 3920,
+      "fill": "$surface",
+      "cornerRadius": 32,
+      "layout": "none",
+      "children": [
+        {
+          "type": "rectangle",
+          "cornerRadius": 32,
+          "id": "5Wwmi",
+          "x": 0,
+          "y": 0,
+          "name": "bg",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "$hero-gradient-start",
+                "position": 0
+              },
+              {
+                "color": "$hero-gradient-end",
+                "position": 1
+              }
+            ]
+          },
+          "width": 1440,
+          "height": 3920
+        },
+        {
+          "type": "ellipse",
+          "id": "kd4ot",
+          "x": 920,
+          "y": 120,
+          "name": "glow1",
+          "fill": "#2A6AF540",
+          "width": 420,
+          "height": 420,
+          "effect": {
+            "type": "blur",
+            "radius": 100
+          }
+        },
+        {
+          "type": "ellipse",
+          "id": "BukhZ",
+          "x": 1010,
+          "y": 180,
+          "name": "glow2",
+          "fill": "#A7FF3C2C",
+          "width": 260,
+          "height": 260,
+          "effect": {
+            "type": "blur",
+            "radius": 80
+          }
+        },
+        {
+          "type": "frame",
+          "id": "d2BqE",
+          "x": 120,
+          "y": 40,
+          "name": "content",
+          "width": 1200,
+          "height": 3340,
+          "layout": "vertical",
+          "gap": 80,
+          "children": [
+            {
+              "type": "frame",
+              "id": "c1Ei0",
+              "name": "header",
+              "width": "fill_container",
+              "padding": [
+                18,
+                0
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Kvuza",
+                  "name": "logoWrap",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "bz3bY",
+                      "name": "logoMark",
+                      "width": 42,
+                      "height": 42,
+                      "fill": {
+                        "type": "gradient",
+                        "gradientType": "linear",
+                        "enabled": true,
+                        "rotation": 135,
+                        "size": {
+                          "height": 1
+                        },
+                        "colors": [
+                          {
+                            "color": "#173961",
+                            "position": 0
+                          },
+                          {
+                            "color": "$accent",
+                            "position": 1
+                          }
+                        ]
+                      },
+                      "cornerRadius": 14,
+                      "effect": {
+                        "type": "shadow",
+                        "shadowType": "outer",
+                        "color": "#A7FF3C30",
+                        "offset": {
+                          "x": 0,
+                          "y": 8
+                        },
+                        "blur": 18
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "id": "ic5on",
+                      "name": "logoText",
+                      "fill": "$text-primary",
+                      "content": "RunAI",
+                      "fontFamily": "Anton",
+                      "fontSize": 30,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "JNN7F",
+                  "name": "navCluster",
+                  "gap": 18,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "5i9Jd",
+                      "name": "navLinks",
+                      "fill": "#FFFFFF04",
+                      "cornerRadius": 20,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$border"
+                      },
+                      "gap": 18,
+                      "padding": [
+                        10,
+                        14
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "a9UBm",
+                          "name": "navText1",
+                          "fill": "$text-secondary",
+                          "content": "Features",
+                          "fontFamily": "IBM Plex Mono",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "oazdi",
+                          "name": "navText2",
+                          "fill": "$text-secondary",
+                          "content": "How it works",
+                          "fontFamily": "IBM Plex Mono",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Urcf0",
+                          "name": "navText3",
+                          "fill": "$text-secondary",
+                          "content": "Pricing",
+                          "fontFamily": "IBM Plex Mono",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "oqm7Q",
+                      "name": "langGroup",
+                      "fill": "#FFFFFF04",
+                      "cornerRadius": 18,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$border"
+                      },
+                      "gap": 8,
+                      "padding": [
+                        8,
+                        10
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ngm8g",
+                          "name": "langZh",
+                          "fill": "$text-primary",
+                          "content": "中文",
+                          "fontFamily": "Geist",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "smzzU",
+                          "name": "langEn",
+                          "fill": "$text-secondary",
+                          "content": "EN",
+                          "fontFamily": "Geist",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "PZ1oi",
+                          "name": "langDe",
+                          "fill": "$text-secondary",
+                          "content": "DE",
+                          "fontFamily": "Geist",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Hmoi6",
+                      "name": "cta",
+                      "fill": "$accent",
+                      "cornerRadius": 14,
+                      "padding": [
+                        14,
+                        22
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "lYnOC",
+                          "name": "ctaText",
+                          "fill": "#08131F",
+                          "content": "開始訓練",
+                          "fontFamily": "Geist",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "s4qWM",
+              "name": "hero",
+              "width": "fill_container",
+              "gap": 40,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "r6GCW",
+                  "name": "heroLeft",
+                  "width": 560,
+                  "layout": "vertical",
+                  "gap": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "wTnvl",
+                      "name": "heroEyebrow",
+                      "fill": "$accent",
+                      "content": "ADAPTIVE RUNNING OS",
+                      "fontFamily": "IBM Plex Mono",
+                      "fontSize": 13,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1.6
+                    },
+                    {
+                      "type": "text",
+                      "id": "dt1Vx",
+                      "name": "heroTitle",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "你的 AI 跑步教練，幫你跑得更快、更遠、更聰明",
+                      "lineHeight": 0.95,
+                      "fontFamily": "Anton",
+                      "fontSize": 72,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "zVSiD",
+                      "name": "heroDesc",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "根據你的能力、目標與環境，自動生成每日課表與最佳路線。讓恢復、訓練刺激與安全性一起被計算。",
+                      "lineHeight": 1.55,
+                      "fontFamily": "Geist",
+                      "fontSize": 18,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "HDvX3",
+                      "name": "heroActions",
+                      "gap": 14,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "VnD4E",
+                          "name": "heroPrimary",
+                          "fill": "$accent",
+                          "cornerRadius": 14,
+                          "padding": [
+                            14,
+                            22
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "XOo9c",
+                              "name": "heroPrimaryText",
+                              "fill": "#08131F",
+                              "content": "立即開始（免費）",
+                              "fontFamily": "Geist",
+                              "fontSize": 15,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "yAlpH",
+                          "name": "heroSecondary",
+                          "fill": "#FFFFFF08",
+                          "cornerRadius": 14,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "$border"
+                          },
+                          "padding": [
+                            14,
+                            22
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "u3Fi2",
+                              "name": "heroSecondaryText",
+                              "fill": "$text-primary",
+                              "content": "查看 Demo",
+                              "fontFamily": "Geist",
+                              "fontSize": 15,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "qRZYG",
+                      "name": "heroProof",
+                      "width": "fill_container",
+                      "gap": 16,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "9ApPP",
+                          "name": "proof1",
+                          "width": "fill_container",
+                          "fill": "#FFFFFF04",
+                          "cornerRadius": 18,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "$border"
+                          },
+                          "layout": "vertical",
+                          "gap": 6,
+                          "padding": [
+                            16,
+                            18
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "N2w4a",
+                              "name": "proof1a",
+                              "fill": "$text-primary",
+                              "content": "15K+",
+                              "fontFamily": "Anton",
+                              "fontSize": 34,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "1CkhH",
+                              "name": "proof1b",
+                              "fill": "$text-secondary",
+                              "content": "本週已生成訓練課表",
+                              "fontFamily": "Geist",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "fT75v",
+                          "name": "proof2",
+                          "width": "fill_container",
+                          "fill": "#FFFFFF04",
+                          "cornerRadius": 18,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "$border"
+                          },
+                          "layout": "vertical",
+                          "gap": 6,
+                          "padding": [
+                            16,
+                            18
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "dVZJu",
+                              "name": "proof2a",
+                              "fill": "$text-primary",
+                              "content": "4.8★",
+                              "fontFamily": "Anton",
+                              "fontSize": 34,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "tz5Oy",
+                              "name": "proof2b",
+                              "fill": "$text-secondary",
+                              "content": "跑者平均週留存",
+                              "fontFamily": "Geist",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "ojaVc",
+                          "name": "proof3",
+                          "width": "fill_container",
+                          "fill": "#FFFFFF04",
+                          "cornerRadius": 18,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "$border"
+                          },
+                          "layout": "vertical",
+                          "gap": 6,
+                          "padding": [
+                            16,
+                            18
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "OS2PY",
+                              "name": "proof3a",
+                              "fill": "$text-primary",
+                              "content": "-22%",
+                              "fontFamily": "Anton",
+                              "fontSize": 34,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "z96v6",
+                              "name": "proof3b",
+                              "fill": "$text-secondary",
+                              "content": "疲勞累積風險下降",
+                              "fontFamily": "Geist",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "YrCLQ",
+                  "name": "heroRight",
+                  "width": "fill_container",
+                  "fill": "#0A1728CC",
+                  "cornerRadius": 28,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "#2B4664"
+                  },
+                  "effect": [
+                    {
+                      "type": "shadow",
+                      "shadowType": "outer",
+                      "color": "#00000066",
+                      "offset": {
+                        "x": 0,
+                        "y": 24
+                      },
+                      "blur": 48
+                    },
+                    {
+                      "type": "background_blur",
+                      "radius": 16
+                    }
+                  ],
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "U37y8",
+                      "name": "dashTop",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "jhxUr",
+                          "name": "dashTitle",
+                          "fill": "$text-primary",
+                          "content": "今日訓練面板",
+                          "fontFamily": "Geist",
+                          "fontSize": 18,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "5KA8D",
+                          "name": "dashBadge",
+                          "fill": "$accent-soft",
+                          "cornerRadius": 999,
+                          "padding": [
+                            8,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "n4HDC",
+                              "name": "dashBadgeText",
+                              "fill": "$accent",
+                              "content": "AI Ready",
+                              "fontFamily": "IBM Plex Mono",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "SMWJQ",
+                      "name": "dashBody",
+                      "width": "fill_container",
+                      "gap": 18,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "FxZco",
+                          "name": "planCard",
+                          "width": 300,
+                          "fill": "$surface-panel",
+                          "cornerRadius": 22,
+                          "layout": "vertical",
+                          "gap": 14,
+                          "padding": 20,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "bTPPv",
+                              "name": "planLabel",
+                              "fill": "$text-secondary",
+                              "content": "今日課表",
+                              "fontFamily": "IBM Plex Mono",
+                              "fontSize": 12,
+                              "fontWeight": "normal",
+                              "letterSpacing": 1.1
+                            },
+                            {
+                              "type": "text",
+                              "id": "237xL",
+                              "name": "planMain",
+                              "fill": "$text-primary",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "10K 漸進跑 + 4x1K 閾值",
+                              "lineHeight": 1.1,
+                              "fontFamily": "Geist",
+                              "fontSize": 28,
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "text",
+                              "id": "P3Sun",
+                              "name": "planMeta",
+                              "fill": "$text-secondary",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "建議配速 4'45 - 4'55 / 恢復心率 < 142 / 目標負荷 78",
+                              "lineHeight": 1.55,
+                              "fontFamily": "Geist",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "frame",
+                              "id": "xk2IM",
+                              "name": "planBars",
+                              "width": "fill_container",
+                              "height": 90,
+                              "gap": 8,
+                              "alignItems": "end",
+                              "children": [
+                                {
+                                  "type": "frame",
+                                  "id": "EkL7j",
+                                  "name": "bar1",
+                                  "width": "fill_container",
+                                  "height": 42,
+                                  "fill": "#28507D",
+                                  "cornerRadius": [
+                                    10,
+                                    10,
+                                    0,
+                                    0
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "UTFlu",
+                                  "name": "bar2",
+                                  "width": "fill_container",
+                                  "height": 58,
+                                  "fill": "#3B6AA1",
+                                  "cornerRadius": [
+                                    10,
+                                    10,
+                                    0,
+                                    0
+                                  ]
+                                },
+                                {
+                                  "type": "frame",
+                                  "id": "9nYA7",
+                                  "name": "bar3",
+                                  "width": "fill_container",
+                                  "height": 74,
+                                  "fill": "$accent",
+                                  "cornerRadius": [
+                                    10,
+                                    10,
+                                    0,
+                                    0
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "0YmLA",
+                          "name": "routePredCol",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 18,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "LoyAd",
+                              "name": "routeMini",
+                              "width": "fill_container",
+                              "height": 210,
+                              "fill": "#0E2036",
+                              "cornerRadius": 22,
+                              "stroke": {
+                                "align": "inside",
+                                "thickness": 1,
+                                "fill": "$border"
+                              },
+                              "layout": "none",
+                              "children": [
+                                {
+                                  "type": "path",
+                                  "id": "nVeOn",
+                                  "x": 38,
+                                  "y": 28,
+                                  "name": "routeLine1",
+                                  "geometry": "M17 12c28-4 61 24 69 51 7 26-16 57-34 74-17 16 7 27 44 13 36-14 79-45 95-73 13-23-2-48-30-56-35-10-88-2-144-9z",
+                                  "fill": "#173252",
+                                  "width": 220,
+                                  "height": 150
+                                },
+                                {
+                                  "type": "path",
+                                  "id": "JxCOI",
+                                  "x": 40,
+                                  "y": 31,
+                                  "name": "routeLine2",
+                                  "geometry": "M17 12c28-4 61 24 69 51 7 26-16 57-34 74-17 16 7 27 44 13 36-14 79-45 95-73 13-23-2-48-30-56-35-10-88-2-144-9z",
+                                  "fill": "#00000000",
+                                  "width": 216,
+                                  "height": 146,
+                                  "stroke": {
+                                    "align": "inside",
+                                    "thickness": 4,
+                                    "fill": "$accent"
+                                  }
+                                },
+                                {
+                                  "type": "ellipse",
+                                  "id": "nuV1V",
+                                  "x": 188,
+                                  "y": 56,
+                                  "name": "mapPin",
+                                  "fill": "$accent",
+                                  "width": 16,
+                                  "height": 16,
+                                  "effect": {
+                                    "type": "shadow",
+                                    "shadowType": "outer",
+                                    "color": "#A7FF3C55",
+                                    "blur": 18
+                                  }
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "cC4Sm",
+                              "name": "predMini",
+                              "width": "fill_container",
+                              "fill": "#0E2036",
+                              "cornerRadius": 22,
+                              "stroke": {
+                                "align": "inside",
+                                "thickness": 1,
+                                "fill": "$border"
+                              },
+                              "layout": "vertical",
+                              "gap": 10,
+                              "padding": 20,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "cdMGU",
+                                  "name": "predLabel",
+                                  "fill": "$text-secondary",
+                                  "content": "比賽預測",
+                                  "fontFamily": "IBM Plex Mono",
+                                  "fontSize": 12,
+                                  "fontWeight": "normal",
+                                  "letterSpacing": 1.1
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "3Qott",
+                                  "name": "predValue",
+                                  "fill": "$text-primary",
+                                  "content": "Half Marathon 1:37:42",
+                                  "fontFamily": "Geist",
+                                  "fontSize": 24,
+                                  "fontWeight": "600"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "1DCVw",
+                                  "name": "predMeta",
+                                  "fill": "$text-secondary",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "根據近 6 週負荷、VO2 Max 估算與地形適性，自動調整完賽預測。",
+                                  "lineHeight": 1.5,
+                                  "fontFamily": "Geist",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "YUU8X",
+              "name": "featuresSection",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 28,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Y9ggb",
+                  "name": "featuresEyebrow",
+                  "fill": "$accent",
+                  "content": "CORE FEATURES",
+                  "fontFamily": "IBM Plex Mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1.5
+                },
+                {
+                  "type": "text",
+                  "id": "bq3qC",
+                  "name": "featuresTitle",
+                  "fill": "$text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": 640,
+                  "content": "為每一次出發，提供課表、路線與賽事判斷",
+                  "lineHeight": 0.98,
+                  "fontFamily": "Anton",
+                  "fontSize": 54,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "ABzGa",
+                  "name": "featuresDesc",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": 640,
+                  "content": "把訓練決策拆成你每天都會用到的三件事：今天該跑什麼、該跑哪裡、這樣跑離目標還差多少。",
+                  "lineHeight": 1.55,
+                  "fontFamily": "Geist",
+                  "fontSize": 17,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "ZTFX2",
+                  "name": "featureRow",
+                  "width": "fill_container",
+                  "gap": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "71c4O",
+                      "name": "card1",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF04",
+                      "cornerRadius": 20,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$border"
+                      },
+                      "layout": "vertical",
+                      "gap": 20,
+                      "padding": 28,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "P21YR",
+                          "name": "card1icon",
+                          "width": 52,
+                          "height": 52,
+                          "fill": "$accent-soft",
+                          "cornerRadius": 16,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "uOZk1",
+                              "name": "card1iconText",
+                              "fill": "$accent",
+                              "content": "AI",
+                              "fontFamily": "IBM Plex Mono",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "3hMO8",
+                          "name": "card1title",
+                          "fill": "$text-primary",
+                          "content": "今日課表 AI",
+                          "fontFamily": "Geist",
+                          "fontSize": 24,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "6uVRv",
+                          "name": "card1desc",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "根據恢復程度、近期負荷與目標賽事，自動生成今天最有效的訓練安排。",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Geist",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "rDsaX",
+                      "name": "card2",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF04",
+                      "cornerRadius": 20,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$border"
+                      },
+                      "layout": "vertical",
+                      "gap": 20,
+                      "padding": 28,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "S9rWz",
+                          "name": "card2icon",
+                          "width": 52,
+                          "height": 52,
+                          "fill": "$accent-soft",
+                          "cornerRadius": 16,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "s70jF",
+                              "name": "card2iconText",
+                              "fill": "$accent",
+                              "content": "MAP",
+                              "fontFamily": "IBM Plex Mono",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "EXGVv",
+                          "name": "card2title",
+                          "fill": "$text-primary",
+                          "content": "跑步路線推薦",
+                          "fontFamily": "Geist",
+                          "fontSize": 24,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "LzI7W",
+                          "name": "card2desc",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "結合時間、地形、天候與安全權重，推薦最適合你今天狀態的路線。",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Geist",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "bWqcU",
+                      "name": "card3",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF04",
+                      "cornerRadius": 20,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$border"
+                      },
+                      "layout": "vertical",
+                      "gap": 20,
+                      "padding": 28,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "Cf5o6",
+                          "name": "card3icon",
+                          "width": 52,
+                          "height": 52,
+                          "fill": "$accent-soft",
+                          "cornerRadius": 16,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "8UUFu",
+                              "name": "card3iconText",
+                              "fill": "$accent",
+                              "content": "PR",
+                              "fontFamily": "IBM Plex Mono",
+                              "fontSize": 14,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "On03M",
+                          "name": "card3title",
+                          "fill": "$text-primary",
+                          "content": "比賽預測系統",
+                          "fontFamily": "Geist",
+                          "fontSize": 24,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "oeqLu",
+                          "name": "card3desc",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "從週期進展、配速穩定度與生理指標變化，持續修正你的完賽預測。",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Geist",
+                          "fontSize": 15,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "v54yu",
+              "name": "howSection",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "1pEYq",
+                  "name": "howEyebrow",
+                  "fill": "$accent",
+                  "content": "HOW IT WORKS",
+                  "fontFamily": "IBM Plex Mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1.5
+                },
+                {
+                  "type": "text",
+                  "id": "24bRB",
+                  "name": "howTitle",
+                  "fill": "$text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": 700,
+                  "content": "從資料到回饋，形成每天都會變聰明的訓練循環",
+                  "lineHeight": 0.98,
+                  "fontFamily": "Anton",
+                  "fontSize": 52,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "Ftljf",
+                  "name": "howDesc",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": 700,
+                  "content": "你輸入的跑者背景、裝置資料與每次訓練回饋，會持續回到模型裡重新校正課表與路線策略。",
+                  "lineHeight": 1.55,
+                  "fontFamily": "Geist",
+                  "fontSize": 17,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "o33Le",
+                  "name": "stepRow",
+                  "width": "fill_container",
+                  "gap": 18,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "vgTMR",
+                      "name": "step1",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "rkHg1",
+                          "name": "step1Badge",
+                          "width": 48,
+                          "height": 48,
+                          "fill": "$surface-panel",
+                          "cornerRadius": 24,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "$border"
+                          },
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "LE0p0",
+                              "name": "step1No",
+                              "fill": "$accent",
+                              "content": "01",
+                              "fontFamily": "IBM Plex Mono",
+                              "fontSize": 14,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "0Kans",
+                          "name": "step1Title",
+                          "fill": "$text-primary",
+                          "content": "輸入資料",
+                          "fontFamily": "Geist",
+                          "fontSize": 18,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "LoMXT",
+                          "name": "step1Text",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "建立目標賽事、週跑量、心率區間與常跑時間帶。",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "mwqpy",
+                      "name": "step2",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "HsiAJ",
+                          "name": "step2Badge",
+                          "width": 48,
+                          "height": 48,
+                          "fill": "$surface-panel",
+                          "cornerRadius": 24,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "$border"
+                          },
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "wtfU6",
+                              "name": "step2No",
+                              "fill": "$accent",
+                              "content": "02",
+                              "fontFamily": "IBM Plex Mono",
+                              "fontSize": 14,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "4yYUB",
+                          "name": "step2Title",
+                          "fill": "$text-primary",
+                          "content": "AI 評估",
+                          "fontFamily": "Geist",
+                          "fontSize": 18,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "12CQH",
+                          "name": "step2Text",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "模型衡量疲勞、恢復、地形偏好與近期表現，決定今日策略。",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "GSNYi",
+                      "name": "step3",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "7JO6F",
+                          "name": "step3Badge",
+                          "width": 48,
+                          "height": 48,
+                          "fill": "$surface-panel",
+                          "cornerRadius": 24,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "$border"
+                          },
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "PDLSc",
+                              "name": "step3No",
+                              "fill": "$accent",
+                              "content": "03",
+                              "fontFamily": "IBM Plex Mono",
+                              "fontSize": 14,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "EuRfC",
+                          "name": "step3Title",
+                          "fill": "$text-primary",
+                          "content": "今日課表 + 路線",
+                          "fontFamily": "Geist",
+                          "fontSize": 18,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "RL7CG",
+                          "name": "step3Text",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "輸出當日訓練內容、建議配速與最適合當下條件的跑線。",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "khw45",
+                      "name": "step4",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "iCHCX",
+                          "name": "step4Badge",
+                          "width": 48,
+                          "height": 48,
+                          "fill": "$surface-panel",
+                          "cornerRadius": 24,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "$border"
+                          },
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "WlqPx",
+                              "name": "step4No",
+                              "fill": "$accent",
+                              "content": "04",
+                              "fontFamily": "IBM Plex Mono",
+                              "fontSize": 14,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "mGy9c",
+                          "name": "step4Title",
+                          "fill": "$text-primary",
+                          "content": "跑後回饋",
+                          "fontFamily": "Geist",
+                          "fontSize": 18,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "mHSFu",
+                          "name": "step4Text",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "上傳主觀疲勞、HR drift 與完成度，讓模型知道今天是否過量。",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "51O3Y",
+                      "name": "step5",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "m4E3C",
+                          "name": "step5Badge",
+                          "width": 48,
+                          "height": 48,
+                          "fill": "$surface-panel",
+                          "cornerRadius": 24,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "$border"
+                          },
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "ywtV3",
+                              "name": "step5No",
+                              "fill": "$accent",
+                              "content": "05",
+                              "fontFamily": "IBM Plex Mono",
+                              "fontSize": 14,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "IlBqN",
+                          "name": "step5Title",
+                          "fill": "$text-primary",
+                          "content": "持續優化",
+                          "fontFamily": "Geist",
+                          "fontSize": 18,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "QcXOJ",
+                          "name": "step5Text",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "系統依週期與反應自動修正後續節奏，避免停滯與受傷風險。",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "w1Hpw",
+              "name": "routeSection",
+              "width": "fill_container",
+              "gap": 36,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "4sb0L",
+                  "name": "routeCopy",
+                  "width": 420,
+                  "layout": "vertical",
+                  "gap": 18,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "vpcVo",
+                      "name": "routeEyebrow",
+                      "fill": "$accent",
+                      "content": "SMART ROUTE",
+                      "fontFamily": "IBM Plex Mono",
+                      "fontSize": 13,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "9DgCf",
+                      "name": "routeTitle",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "不只知道該跑什麼，也知道今天該跑哪裡",
+                      "lineHeight": 0.98,
+                      "fontFamily": "Anton",
+                      "fontSize": 52,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "PqCb7",
+                      "name": "routeDesc",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "系統依據你的訓練目的、剩餘時間、累積疲勞與區域地圖資料，優先考慮安全、地形與距離，推薦最適合今天狀態的路線。",
+                      "lineHeight": 1.55,
+                      "fontFamily": "Geist",
+                      "fontSize": 17,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "KzW4Q",
+                      "name": "routeBullet1",
+                      "fill": "$text-primary",
+                      "content": "安全優先：避開高車流與低照明區段",
+                      "fontFamily": "Geist",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "HytSq",
+                      "name": "routeBullet2",
+                      "fill": "$text-primary",
+                      "content": "地形匹配：平路恢復、坡度刺激、長距離耐力",
+                      "fontFamily": "Geist",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "GeBum",
+                      "name": "routeBullet3",
+                      "fill": "$text-primary",
+                      "content": "距離控制：精準對齊今日課表需要的總里程",
+                      "fontFamily": "Geist",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "646ad",
+                  "name": "routeVisual",
+                  "width": "fill_container",
+                  "fill": "#0B1830",
+                  "cornerRadius": 28,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "$border"
+                  },
+                  "layout": "vertical",
+                  "gap": 18,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "8HlXD",
+                      "name": "routeMap",
+                      "width": "fill_container",
+                      "height": 320,
+                      "fill": "#10233D",
+                      "cornerRadius": 24,
+                      "layout": "none",
+                      "children": [
+                        {
+                          "type": "path",
+                          "id": "GNYLC",
+                          "x": 72,
+                          "y": 42,
+                          "name": "routeTrack",
+                          "geometry": "M29 147c27-43 65-108 125-119 59-12 122 11 150 58 29 49 11 121-46 128-55 7-87-46-129-52-44-7-74 26-100-15z",
+                          "fill": "#00000000",
+                          "width": 430,
+                          "height": 220,
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 8,
+                            "fill": "$accent"
+                          }
+                        },
+                        {
+                          "type": "ellipse",
+                          "id": "stFR5",
+                          "x": 92,
+                          "y": 206,
+                          "name": "routePinA",
+                          "fill": "$text-primary",
+                          "width": 18,
+                          "height": 18
+                        },
+                        {
+                          "type": "ellipse",
+                          "id": "8jsof",
+                          "x": 454,
+                          "y": 126,
+                          "name": "routePinB",
+                          "fill": "$accent",
+                          "width": 18,
+                          "height": 18
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "axozK",
+                      "name": "routeInfo",
+                      "width": "fill_container",
+                      "gap": 14,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "hn0Ff",
+                          "name": "routeChip1",
+                          "width": "fill_container",
+                          "fill": "#FFFFFF04",
+                          "cornerRadius": 18,
+                          "layout": "vertical",
+                          "gap": 6,
+                          "padding": [
+                            16,
+                            18
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "gAScl",
+                              "name": "routeChip1a",
+                              "fill": "$text-primary",
+                              "content": "8.6 km",
+                              "fontFamily": "Anton",
+                              "fontSize": 30,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "Jtjv2",
+                              "name": "routeChip1b",
+                              "fill": "$text-secondary",
+                              "content": "平緩河岸路線",
+                              "fontFamily": "Geist",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "OUCTM",
+                          "name": "routeChip2",
+                          "width": "fill_container",
+                          "fill": "#FFFFFF04",
+                          "cornerRadius": 18,
+                          "layout": "vertical",
+                          "gap": 6,
+                          "padding": [
+                            16,
+                            18
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "ep6DW",
+                              "name": "routeChip2a",
+                              "fill": "$text-primary",
+                              "content": "94 / 100",
+                              "fontFamily": "Anton",
+                              "fontSize": 30,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "X6QvX",
+                              "name": "routeChip2b",
+                              "fill": "$text-secondary",
+                              "content": "安全與照明評分",
+                              "fontFamily": "Geist",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "DhP8W",
+              "name": "trustSection",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 28,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "QSsCt",
+                  "name": "trustEyebrow",
+                  "fill": "$accent",
+                  "content": "TRUST / SOCIAL PROOF",
+                  "fontFamily": "IBM Plex Mono",
+                  "fontSize": 13,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1.5
+                },
+                {
+                  "type": "text",
+                  "id": "KkYt5",
+                  "name": "trustTitle",
+                  "fill": "$text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": 700,
+                  "content": "根據你的訓練數據持續優化，每一週都更貼近你的目標",
+                  "lineHeight": 0.98,
+                  "fontFamily": "Anton",
+                  "fontSize": 52,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "Hq9Rx",
+                  "name": "trustDesc",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": 700,
+                  "content": "用清楚的 metrics 告訴跑者，這不是固定課表，而是一個會隨著你的狀態持續修正的訓練系統。",
+                  "lineHeight": 1.55,
+                  "fontFamily": "Geist",
+                  "fontSize": 17,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "WwlFO",
+                  "name": "trustStats",
+                  "width": "fill_container",
+                  "gap": 18,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "1Z5lY",
+                      "name": "stat1",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF04",
+                      "cornerRadius": 14,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$border"
+                      },
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 20,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "4Lwrd",
+                          "name": "stat1a",
+                          "fill": "$text-primary",
+                          "content": "+18%",
+                          "fontFamily": "Anton",
+                          "fontSize": 40,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ZubeK",
+                          "name": "stat1b",
+                          "fill": "$text-secondary",
+                          "content": "配速穩定度",
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Ty8SL",
+                      "name": "stat2",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF04",
+                      "cornerRadius": 14,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$border"
+                      },
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 20,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ckYz1",
+                          "name": "stat2a",
+                          "fill": "$text-primary",
+                          "content": "32 天",
+                          "fontFamily": "Anton",
+                          "fontSize": 40,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "FtcF1",
+                          "name": "stat2b",
+                          "fill": "$text-secondary",
+                          "content": "平均訓練連續週期",
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "KsosM",
+                      "name": "stat3",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF04",
+                      "cornerRadius": 14,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$border"
+                      },
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 20,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ycsTs",
+                          "name": "stat3a",
+                          "fill": "$text-primary",
+                          "content": "91%",
+                          "fontFamily": "Anton",
+                          "fontSize": 40,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "bnM2P",
+                          "name": "stat3b",
+                          "fill": "$text-secondary",
+                          "content": "路線推薦接受率",
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "nGTiv",
+                      "name": "stat4",
+                      "width": "fill_container",
+                      "fill": "#FFFFFF04",
+                      "cornerRadius": 14,
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": 1,
+                        "fill": "$border"
+                      },
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 20,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "F5Fll",
+                          "name": "stat4a",
+                          "fill": "$text-primary",
+                          "content": "-26%",
+                          "fontFamily": "Anton",
+                          "fontSize": 40,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "iIP2X",
+                          "name": "stat4b",
+                          "fill": "$text-secondary",
+                          "content": "高疲勞週發生率",
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Ny9Ve",
+              "name": "finalSection",
+              "width": "fill_container",
+              "fill": "$surface-elevated",
+              "cornerRadius": 28,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "$border"
+              },
+              "padding": 32,
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Pjowa",
+                  "name": "finalCopy",
+                  "width": 620,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "weKk2",
+                      "name": "finalEyebrow",
+                      "fill": "$accent",
+                      "content": "START NOW",
+                      "fontFamily": "IBM Plex Mono",
+                      "fontSize": 13,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "zOUX9",
+                      "name": "finalTitle",
+                      "fill": "$text-primary",
+                      "content": "開始你的第一個訓練週期",
+                      "lineHeight": 0.96,
+                      "fontFamily": "Anton",
+                      "fontSize": 58,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "uIPnq",
+                      "name": "finalDesc",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "讓 AI 根據你的能力與目標，產出第一週的跑步節奏、課表與路線。",
+                      "lineHeight": 1.55,
+                      "fontFamily": "Geist",
+                      "fontSize": 17,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "3bIiQ",
+                  "name": "finalCta",
+                  "fill": "$accent",
+                  "cornerRadius": 14,
+                  "padding": [
+                    14,
+                    22
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "mLP2C",
+                      "name": "finalCtaText",
+                      "fill": "#08131F",
+                      "content": "開始訓練",
+                      "fontFamily": "Geist",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "N6sux",
+              "name": "footer",
+              "width": "fill_container",
+              "padding": [
+                24,
+                0
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "2VHQA",
+                  "name": "footerLeft",
+                  "fill": "$text-primary",
+                  "content": "RunAI",
+                  "fontFamily": "Anton",
+                  "fontSize": 28,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "SgcCs",
+                  "name": "footerRight",
+                  "gap": 18,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Ry5sM",
+                      "name": "footer1",
+                      "fill": "$text-secondary",
+                      "content": "Features",
+                      "fontFamily": "IBM Plex Mono",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "h4MGc",
+                      "name": "footer2",
+                      "fill": "$text-secondary",
+                      "content": "Pricing",
+                      "fontFamily": "IBM Plex Mono",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "dUutB",
+                      "name": "footer3",
+                      "fill": "$text-secondary",
+                      "content": "中文 / EN / DE",
+                      "fontFamily": "IBM Plex Mono",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "themes": {
+    "mode": [
+      "dark",
+      "light"
+    ]
+  },
+  "variables": {
+    "accent": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#A7FF3C",
+          "theme": {
+            "mode": "dark"
+          }
+        },
+        {
+          "value": "#3FAF35",
+          "theme": {
+            "mode": "light"
+          }
+        }
+      ]
+    },
+    "accent-soft": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#19361A",
+          "theme": {
+            "mode": "dark"
+          }
+        },
+        {
+          "value": "#E4F6DA",
+          "theme": {
+            "mode": "light"
+          }
+        }
+      ]
+    },
+    "accent-strong": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#C8FF7A",
+          "theme": {
+            "mode": "dark"
+          }
+        },
+        {
+          "value": "#238E24",
+          "theme": {
+            "mode": "light"
+          }
+        }
+      ]
+    },
+    "border": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#22415D",
+          "theme": {
+            "mode": "dark"
+          }
+        },
+        {
+          "value": "#C9D5E2",
+          "theme": {
+            "mode": "light"
+          }
+        }
+      ]
+    },
+    "font-body": {
+      "type": "string",
+      "value": "Geist"
+    },
+    "font-caption": {
+      "type": "string",
+      "value": "IBM Plex Mono"
+    },
+    "font-heading": {
+      "type": "string",
+      "value": "Anton"
+    },
+    "hero-gradient-end": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#050A13",
+          "theme": {
+            "mode": "dark"
+          }
+        },
+        {
+          "value": "#F8FBFF",
+          "theme": {
+            "mode": "light"
+          }
+        }
+      ]
+    },
+    "hero-gradient-start": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#0E1F3B",
+          "theme": {
+            "mode": "dark"
+          }
+        },
+        {
+          "value": "#DBEAFE",
+          "theme": {
+            "mode": "light"
+          }
+        }
+      ]
+    },
+    "radius-lg": {
+      "type": "number",
+      "value": 20
+    },
+    "radius-md": {
+      "type": "number",
+      "value": 14
+    },
+    "radius-xl": {
+      "type": "number",
+      "value": 28
+    },
+    "surface": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#07111F",
+          "theme": {
+            "mode": "dark"
+          }
+        },
+        {
+          "value": "#F4F8FC",
+          "theme": {
+            "mode": "light"
+          }
+        }
+      ]
+    },
+    "surface-elevated": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#0D1B2F",
+          "theme": {
+            "mode": "dark"
+          }
+        },
+        {
+          "value": "#FFFFFF",
+          "theme": {
+            "mode": "light"
+          }
+        }
+      ]
+    },
+    "surface-muted": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#163252",
+          "theme": {
+            "mode": "dark"
+          }
+        },
+        {
+          "value": "#D6E2EE",
+          "theme": {
+            "mode": "light"
+          }
+        }
+      ]
+    },
+    "surface-panel": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#10233D",
+          "theme": {
+            "mode": "dark"
+          }
+        },
+        {
+          "value": "#E9F0F7",
+          "theme": {
+            "mode": "light"
+          }
+        }
+      ]
+    },
+    "text-muted": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#6D86A0",
+          "theme": {
+            "mode": "dark"
+          }
+        },
+        {
+          "value": "#71879A",
+          "theme": {
+            "mode": "light"
+          }
+        }
+      ]
+    },
+    "text-primary": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#F5FBFF",
+          "theme": {
+            "mode": "dark"
+          }
+        },
+        {
+          "value": "#08131F",
+          "theme": {
+            "mode": "light"
+          }
+        }
+      ]
+    },
+    "text-secondary": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#A6BDCF",
+          "theme": {
+            "mode": "dark"
+          }
+        },
+        {
+          "value": "#4F6477",
+          "theme": {
+            "mode": "light"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,74 @@
+Convert landing.pen into a production-ready Next.js (App Router) page.
+
+TECH STACK:
+- Next.js  (App Router)
+- TypeScript
+- Tailwind CSS
+- Shadcn UI (if applicable)
+
+REQUIREMENTS:
+
+1. SPLIT INTO COMPONENTS (IMPORTANT)
+
+Create reusable components under:
+`/components/landing/`
+
+Must include:
+
+- Header.tsx
+- HeroSection.tsx
+- FeatureSection.tsx
+- HowItWorksSection.tsx
+- RouteSection.tsx
+- CTASection.tsx
+- Footer.tsx
+
+2. PAGE STRUCTURE
+
+Create:
+
+/app/page.tsx
+
+Only responsible for layout composition:
+
+<Header />
+<HeroSection />
+<FeatureSection />
+<HowItWorksSection />
+<RouteSection />
+<CTASection />
+<Footer />
+
+3. STYLING
+
+- Use Tailwind CSS
+- Extract repeated UI into reusable components
+- Avoid inline styles
+
+4. I18N READY
+
+- Extract all text into a dictionary structure
+- Example:
+
+const dict = {
+  zh: {...},
+  en: {...},
+  de: {...}
+}
+
+5. DARK MODE
+
+- Use Tailwind dark class strategy
+- No hardcoded colors
+
+6. BEST PRACTICE
+
+- Use semantic HTML
+- Use proper spacing system
+- No monolithic component
+
+IMPORTANT:
+
+- Do NOT generate a single large file
+- Prioritize component reusability
+- Code must be clean and scalable
