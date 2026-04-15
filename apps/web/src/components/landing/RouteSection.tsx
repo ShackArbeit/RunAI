@@ -37,11 +37,11 @@ export function RouteSection() {
               title={dictionary.route.title}
             />
 
-            <ul className="space-y-3">
+            <ul className="space-y-3 ">
               {dictionary.route.bullets.map((bullet) => (
                 <li
                   key={bullet}
-                  className="rounded-2xl border border-[var(--border-subtle)] bg-[var(--surface-soft)] px-4 py-3 text-sm leading-7 text-[var(--text-primary)]"
+                  className="rounded-2xl border border-[var(--border-subtle)] bg-[var(--surface-soft)] px-4 py-3 text-md leading-7 text-[var(--text-primary)]"
                 >
                   {bullet}
                 </li>

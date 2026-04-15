@@ -14,11 +14,11 @@ function StepCard({
 }) {
   return (
     <article className="flex min-w-[220px] flex-1 flex-col rounded-[24px] border border-[var(--border-subtle)] bg-[var(--surface-soft)] p-5">
-      <div className="flex h-12 w-12 items-center justify-center rounded-full border border-[var(--border-subtle)] bg-[var(--surface-panel)] font-caption text-sm tracking-[0.22em] text-[var(--accent)]">
+      <div className="flex h-12 w-12 items-center justify-center rounded-full border border-[var(--border-subtle)] bg-[var(--surface-panel)] font-caption text-md tracking-[0.22em] text-[var(--accent)]">
         {String(index + 1).padStart(2, "0")}
       </div>
-      <h3 className="mt-4 text-xl font-semibold text-[var(--text-primary)]">{title}</h3>
-      <p className="mt-3 text-sm leading-7 text-[var(--text-secondary)]">{description}</p>
+      <h3 className="mt-4 text-2xl font-semibold text-[var(--text-primary)]">{title}</h3>
+      <p className="mt-3 text-md leading-7 text-[var(--text-secondary)]">{description}</p>
     </article>
   );
 }

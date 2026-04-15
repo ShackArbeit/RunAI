@@ -17,8 +17,8 @@ export function Header() {
       <SectionShell className="pt-5">
         <div className="surface-card flex items-center justify-between rounded-[28px] px-4 py-3 sm:px-5 lg:px-6">
           <div className="flex items-center gap-3">
-            <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[linear-gradient(135deg,var(--surface-muted),var(--accent))] shadow-[0_8px_20px_var(--hero-glow-green)]" />
-            <span className="font-heading text-3xl leading-none text-[var(--text-primary)]">
+            <div className="flex h-13 w-13 items-center justify-center rounded-2xl bg-[linear-gradient(135deg,var(--surface-muted),var(--accent))] shadow-[0_8px_20px_var(--hero-glow-green)]" />
+            <span className="font-heading text-5xl leading-none text-[var(--text-primary)]">
               {dictionary.brand}
             </span>
           </div>
@@ -28,13 +28,13 @@ export function Header() {
               aria-label="Primary"
               className="flex items-center gap-5 rounded-full border border-[var(--border-subtle)] bg-[var(--surface-soft)] px-4 py-2"
             >
-              <a className="text-sm text-[var(--text-secondary)] transition-colors hover:text-[var(--text-primary)]" href="#features">
+              <a className="text-lg text-[var(--text-secondary)] transition-colors hover:text-[var(--text-primary)]" href="#features">
                 {dictionary.nav.features}
               </a>
-              <a className="text-sm text-[var(--text-secondary)] transition-colors hover:text-[var(--text-primary)]" href="#how-it-works">
+              <a className="text-lg text-[var(--text-secondary)] transition-colors hover:text-[var(--text-primary)]" href="#how-it-works">
                 {dictionary.nav.howItWorks}
               </a>
-              <a className="text-sm text-[var(--text-secondary)] transition-colors hover:text-[var(--text-primary)]" href="#pricing">
+              <a className="text-lg text-[var(--text-secondary)] transition-colors hover:text-[var(--text-primary)]" href="#pricing">
                 {dictionary.nav.pricing}
               </a>
             </nav>
@@ -48,7 +48,7 @@ export function Header() {
                 {locales.map((item) => (
                   <button
                     key={item}
-                    className={`rounded-full px-3 py-1.5 text-xs font-medium transition-colors ${
+                    className={`rounded-full px-3 py-1.5 text-md font-medium transition-colors ${
                       locale === item
                         ? "bg-[var(--surface-muted)] text-[var(--text-primary)]"
                         : "text-[var(--text-secondary)] hover:text-[var(--text-primary)]"
@@ -63,7 +63,7 @@ export function Header() {
 
               <button
                 aria-label={dictionary.nav.themeLabel}
-                className="flex items-center gap-2 rounded-full border border-[var(--border-subtle)] bg-[var(--surface-soft)] px-3 py-2 text-sm text-[var(--text-secondary)] transition-colors hover:text-[var(--text-primary)]"
+                className="flex items-center gap-2 rounded-full border border-[var(--border-subtle)] bg-[var(--surface-soft)] px-3 py-2 text-md text-[var(--text-secondary)] transition-colors hover:text-[var(--text-primary)]"
                 onClick={toggleTheme}
                 type="button"
               >

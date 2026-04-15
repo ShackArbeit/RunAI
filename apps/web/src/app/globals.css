@@ -1,6 +1,9 @@
 @import "tailwindcss";
 
 :root {
+  --font-body: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-heading: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  --font-caption: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
   --surface: #f4f8fc;
   --surface-elevated: #ffffff;
   --surface-panel: #e9f0f7;
@@ -55,15 +58,15 @@
   }
 
   .font-body {
-    font-family: var(--font-geist), sans-serif;
+    font-family: var(--font-body);
   }
 
   .font-heading {
-    font-family: var(--font-anton), sans-serif;
+    font-family: var(--font-heading);
   }
 
   .font-caption {
-    font-family: var(--font-ibm-plex-mono), monospace;
+    font-family: var(--font-caption);
   }
 }
 

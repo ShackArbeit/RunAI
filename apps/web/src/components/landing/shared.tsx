@@ -32,7 +32,7 @@ export function SectionShell({ id, children, className }: SectionShellProps) {
     <section
       id={id}
       className={classes(
-        "mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10",
+        "mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10 ",
         className,
       )}
     >
@@ -59,7 +59,7 @@ export function SectionHeading({
       <p className="font-caption text-[12px] uppercase tracking-[0.28em] text-[var(--accent)] sm:text-[13px]">
         {eyebrow}
       </p>
-      <h2 className="font-heading text-balance text-4xl leading-[0.98] text-[var(--text-primary)] sm:text-5xl lg:text-6xl">
+      <h2 className="mb-2 font-heading text-balance text-4xl leading-[0.98] text-[var(--text-primary)] sm:text-5xl lg:text-6xl">
         {title}
       </h2>
       {description ? (
@@ -91,7 +91,7 @@ export function ActionButton({
   return (
     <span
       className={classes(
-        "inline-flex items-center justify-center rounded-2xl px-5 py-3 text-sm font-semibold transition-all duration-300 sm:px-6 sm:py-3.5",
+        "inline-flex items-center justify-center rounded-2xl px-5 py-3 text-md font-semibold transition-all duration-300 sm:px-6 sm:py-3.5",
         primary
           ? "bg-[var(--accent)] text-[var(--accent-ink)] hover:bg-[var(--accent-strong)]"
           : "border border-[var(--border-subtle)] bg-[var(--surface-soft)] text-[var(--text-primary)] hover:border-[var(--accent)] hover:text-[var(--accent)]",

@@ -1,0 +1,1553 @@
+{
+  "version": "2.10",
+  "children": [
+    {
+      "type": "frame",
+      "id": "bi8Au",
+      "x": -137,
+      "y": -266,
+      "name": "RunAI Auth Dashboard Desktop",
+      "width": 1440,
+      "height": 1600,
+      "fill": "#08111F",
+      "layout": "vertical",
+      "gap": 24,
+      "padding": 32,
+      "children": [
+        {
+          "type": "frame",
+          "id": "mWWj4",
+          "name": "Top Header",
+          "width": "fill_container",
+          "height": 88,
+          "fill": "#0D1A2B",
+          "cornerRadius": 24,
+          "gap": 20,
+          "padding": 20,
+          "children": [
+            {
+              "type": "frame",
+              "id": "IK5xM",
+              "name": "headerLeft",
+              "height": "fill_container",
+              "gap": 18,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "yX3eX",
+                  "name": "logoBadge",
+                  "width": 44,
+                  "height": 44,
+                  "fill": "#16F29A",
+                  "cornerRadius": 14
+                },
+                {
+                  "type": "text",
+                  "id": "cxJWf",
+                  "name": "logoText",
+                  "fill": "#F3F8FF",
+                  "content": "RunAI",
+                  "fontFamily": "Inter",
+                  "fontSize": 28,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "G67rV",
+                  "name": "nav",
+                  "height": "fill_container",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "cfotB",
+                      "name": "navDash",
+                      "fill": "#F3F8FF",
+                      "content": "Dashboard",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "X2s0A",
+                      "name": "navTrain",
+                      "fill": "#8DA4C2",
+                      "content": "Training",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "MggKY",
+                      "name": "navRoute",
+                      "fill": "#8DA4C2",
+                      "content": "Routes",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "vA7Uo",
+                      "name": "navProfile",
+                      "fill": "#8DA4C2",
+                      "content": "Profile",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "J4e99",
+              "name": "headerSpacer",
+              "width": "fill_container",
+              "height": 1,
+              "fill": "#0D1A2B"
+            },
+            {
+              "type": "frame",
+              "id": "0oHZi",
+              "name": "headerRight",
+              "height": "fill_container",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "3IeyK",
+                  "name": "langSwitch",
+                  "fill": "#12233A",
+                  "cornerRadius": 16,
+                  "gap": 8,
+                  "padding": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "id61q",
+                      "name": "langZh",
+                      "fill": "#F3F8FF",
+                      "content": "中文",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "35MQU",
+                      "name": "langEn",
+                      "fill": "#8DA4C2",
+                      "content": "EN",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "PyswT",
+                      "name": "langDe",
+                      "fill": "#8DA4C2",
+                      "content": "DE",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "uHC0a",
+                  "name": "themeToggle",
+                  "fill": "#12233A",
+                  "cornerRadius": 16,
+                  "gap": 8,
+                  "padding": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "eWjaM",
+                      "name": "themeDark",
+                      "fill": "#16F29A",
+                      "content": "Dark",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ZHZaQ",
+                      "name": "themeLight",
+                      "fill": "#8DA4C2",
+                      "content": "Light",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "0hEzG",
+                  "name": "avatar",
+                  "width": 44,
+                  "height": 44,
+                  "fill": "#1F6BFF",
+                  "cornerRadius": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "eptPY",
+          "name": "Main Grid",
+          "width": "fill_container",
+          "gap": 24,
+          "children": [
+            {
+              "type": "frame",
+              "id": "b2Xt1",
+              "name": "Primary Column",
+              "width": 780,
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "cVCzX",
+                  "name": "Today Training",
+                  "width": "fill_container",
+                  "height": 360,
+                  "fill": "#10253D",
+                  "cornerRadius": 28,
+                  "layout": "vertical",
+                  "gap": 18,
+                  "padding": 28,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "aNuHa",
+                      "name": "todayTop",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "KePyZ",
+                          "name": "todayEyebrow",
+                          "fill": "#16F29A",
+                          "content": "TODAY FIRST",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "zP3Gt",
+                          "name": "todayTitle",
+                          "fill": "#F3F8FF",
+                          "content": "今日課表",
+                          "fontFamily": "Inter",
+                          "fontSize": 36,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ID3Cb",
+                          "name": "todaySummary",
+                          "fill": "#A8BCD5",
+                          "content": "Tempo 12K · 5:05-5:20/km · 控制心率 Zone 3",
+                          "fontFamily": "Inter",
+                          "fontSize": 16,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "d1CmR",
+                      "name": "todayPills",
+                      "gap": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "VOaKc",
+                          "name": "pillType",
+                          "fill": "#163A30",
+                          "cornerRadius": 999,
+                          "padding": 10,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Sv53Y",
+                              "name": "pillTypeText",
+                              "fill": "#16F29A",
+                              "content": "TEMPO",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "zpiZF",
+                          "name": "pillDistance",
+                          "fill": "#152B45",
+                          "cornerRadius": 999,
+                          "padding": 10,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "lgsyo",
+                              "name": "pillDistanceText",
+                              "fill": "#DCE7F7",
+                              "content": "12 KM / 62 MIN",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "cdsc4",
+                          "name": "pillPace",
+                          "fill": "#152B45",
+                          "cornerRadius": 999,
+                          "padding": 10,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "ZQObk",
+                              "name": "pillPaceText",
+                              "fill": "#DCE7F7",
+                              "content": "5:05-5:20 / KM",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "xroXL",
+                      "name": "todayBottom",
+                      "width": "fill_container",
+                      "gap": 16,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "X2zX8",
+                          "name": "coachNote",
+                          "fill": "#D2DEEE",
+                          "content": "AI 教練建議：前 3K 保守進入節奏，維持步頻 178-182，末段視心率微調。",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "osZqv",
+                          "name": "startButton",
+                          "width": 148,
+                          "fill": "#16F29A",
+                          "cornerRadius": 18,
+                          "padding": 16,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "5qHXp",
+                              "name": "startText",
+                              "fill": "#082113",
+                              "content": "開始訓練",
+                              "fontFamily": "Inter",
+                              "fontSize": 16,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "eNgoP",
+                  "name": "Route Recommendation",
+                  "width": "fill_container",
+                  "height": 470,
+                  "fill": "#0D1A2B",
+                  "cornerRadius": 24,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "JW9S2",
+                      "name": "routeHead",
+                      "width": "fill_container",
+                      "gap": 10,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "zZdyB",
+                          "name": "routeTitle",
+                          "fill": "#F3F8FF",
+                          "content": "今日建議路線",
+                          "fontFamily": "Inter",
+                          "fontSize": 24,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "YUc7P",
+                          "name": "routeSub",
+                          "fill": "#93A9C6",
+                          "content": "依今日課表與疲勞狀態，優先推薦節奏跑友善路線",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "GrBgL",
+                          "name": "routeSpacer",
+                          "width": "fill_container",
+                          "height": 1,
+                          "fill": "#0D1A2B"
+                        },
+                        {
+                          "type": "text",
+                          "id": "05CDn",
+                          "name": "routeAll",
+                          "fill": "#16F29A",
+                          "content": "查看全部",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "1GJj5",
+                      "name": "routeList",
+                      "width": "fill_container",
+                      "gap": 14,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "LG0ib",
+                          "name": "route1",
+                          "width": 234,
+                          "height": 320,
+                          "fill": "#12233A",
+                          "cornerRadius": 20,
+                          "layout": "vertical",
+                          "gap": 12,
+                          "padding": 16,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "jkUPh",
+                              "name": "route1Map",
+                              "width": "fill_container",
+                              "height": 120,
+                              "fill": "#163A30",
+                              "cornerRadius": 16
+                            },
+                            {
+                              "type": "text",
+                              "id": "zIzmC",
+                              "name": "route1Name",
+                              "fill": "#F3F8FF",
+                              "content": "河濱節奏環線",
+                              "fontFamily": "Inter",
+                              "fontSize": 18,
+                              "fontWeight": "700"
+                            },
+                            {
+                              "type": "text",
+                              "id": "g14v9",
+                              "name": "route1Meta",
+                              "fill": "#A8BCD5",
+                              "content": "8.2 km · 42 分鐘 · 平坦 / 少紅綠燈 / 安全",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "500"
+                            },
+                            {
+                              "type": "text",
+                              "id": "AVE5E",
+                              "name": "route1Tag",
+                              "fill": "#16F29A",
+                              "content": "tempo",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "fPVp2",
+                          "name": "route2",
+                          "width": 234,
+                          "height": 320,
+                          "fill": "#12233A",
+                          "cornerRadius": 20,
+                          "layout": "vertical",
+                          "gap": 12,
+                          "padding": 16,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "9SiRn",
+                              "name": "route2Map",
+                              "width": "fill_container",
+                              "height": 120,
+                              "fill": "#17304B",
+                              "cornerRadius": 16
+                            },
+                            {
+                              "type": "text",
+                              "id": "rqe6w",
+                              "name": "route2Name",
+                              "fill": "#F3F8FF",
+                              "content": "市區晨跑捷徑",
+                              "fontFamily": "Inter",
+                              "fontSize": 18,
+                              "fontWeight": "700"
+                            },
+                            {
+                              "type": "text",
+                              "id": "4OzLb",
+                              "name": "route2Meta",
+                              "fill": "#A8BCD5",
+                              "content": "6.0 km · 33 分鐘 · 平坦 / 補給近 / 易進出",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "500"
+                            },
+                            {
+                              "type": "text",
+                              "id": "Q2Lge",
+                              "name": "route2Tag",
+                              "fill": "#63C4FF",
+                              "content": "easy",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "0RE4y",
+                          "name": "route3",
+                          "width": 234,
+                          "height": 320,
+                          "fill": "#12233A",
+                          "cornerRadius": 20,
+                          "layout": "vertical",
+                          "gap": 12,
+                          "padding": 16,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "pE4ML",
+                              "name": "route3Map",
+                              "width": "fill_container",
+                              "height": 120,
+                              "fill": "#152B45",
+                              "cornerRadius": 16
+                            },
+                            {
+                              "type": "text",
+                              "id": "sh5uL",
+                              "name": "route3Name",
+                              "fill": "#F3F8FF",
+                              "content": "北門耐力外圈",
+                              "fontFamily": "Inter",
+                              "fontSize": 18,
+                              "fontWeight": "700"
+                            },
+                            {
+                              "type": "text",
+                              "id": "2Kygs",
+                              "name": "route3Meta",
+                              "fill": "#A8BCD5",
+                              "content": "14.5 km · 78 分鐘 · 長距離 / 安全 / 少停等",
+                              "fontFamily": "Inter",
+                              "fontSize": 13,
+                              "fontWeight": "500"
+                            },
+                            {
+                              "type": "text",
+                              "id": "qcNF9",
+                              "name": "route3Tag",
+                              "fill": "#A7F35D",
+                              "content": "long",
+                              "fontFamily": "Inter",
+                              "fontSize": 12,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "sZEmP",
+              "name": "Secondary Column",
+              "width": 572,
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "IohWQ",
+                  "name": "Race Prediction",
+                  "width": "fill_container",
+                  "height": 300,
+                  "fill": "#0D1A2B",
+                  "cornerRadius": 24,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "zePzw",
+                      "name": "predMetrics",
+                      "width": "fill_container",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "DL2o9",
+                          "name": "metric5k",
+                          "fill": "#F3F8FF",
+                          "content": "5K 22:18",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "UcjCI",
+                          "name": "metric10k",
+                          "fill": "#F3F8FF",
+                          "content": "10K 46:51",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "6xaoy",
+                          "name": "metricHalf",
+                          "fill": "#F3F8FF",
+                          "content": "Half 1:42:36",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "wxySg",
+                      "name": "predChart",
+                      "width": "fill_container",
+                      "height": 92,
+                      "fill": "#12233A",
+                      "cornerRadius": 18,
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "pBBmF",
+                          "name": "bar1",
+                          "width": 72,
+                          "height": 36,
+                          "fill": "#2A4B6A",
+                          "cornerRadius": 999
+                        },
+                        {
+                          "type": "frame",
+                          "id": "293qz",
+                          "name": "bar2",
+                          "width": 72,
+                          "height": 52,
+                          "fill": "#3477FF",
+                          "cornerRadius": 999
+                        },
+                        {
+                          "type": "frame",
+                          "id": "KP7NO",
+                          "name": "bar3",
+                          "width": 72,
+                          "height": 68,
+                          "fill": "#16F29A",
+                          "cornerRadius": 999
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "LjxyT",
+                      "name": "predTitle",
+                      "fill": "#F3F8FF",
+                      "content": "比賽預測",
+                      "fontFamily": "Inter",
+                      "fontSize": 24,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "jaY7k",
+                      "name": "predSub",
+                      "fill": "#93A9C6",
+                      "content": "依近 6 週訓練品質與恢復狀態動態更新",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "3sC0h",
+                      "name": "goalTrack",
+                      "width": "fill_container",
+                      "height": 12,
+                      "fill": "#152B45",
+                      "cornerRadius": 999,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "2T60O",
+                          "name": "goalFill",
+                          "width": 362,
+                          "height": 12,
+                          "fill": "#16F29A",
+                          "cornerRadius": 999
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "Pzlpq",
+                      "name": "goalLabel",
+                      "fill": "#D2DEEE",
+                      "content": "距離 10K 45:00 目標還差 4.1%",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "x6s4l",
+                      "name": "chartHint",
+                      "fill": "#63C4FF",
+                      "content": "近 8 週走勢",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "kunCY",
+                  "name": "Quick Stats",
+                  "width": "fill_container",
+                  "height": 136,
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "6cBxO",
+                      "name": "stat1",
+                      "width": 182,
+                      "height": "fill_container",
+                      "fill": "#0D1A2B",
+                      "cornerRadius": 20,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 18,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "HHOlj",
+                          "name": "stat1Label",
+                          "fill": "#8DA4C2",
+                          "content": "This week distance",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "pFie2",
+                          "name": "stat1Value",
+                          "fill": "#F3F8FF",
+                          "content": "42.8 KM",
+                          "fontFamily": "Inter",
+                          "fontSize": 24,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "SXKT5",
+                      "name": "stat2",
+                      "width": 182,
+                      "height": "fill_container",
+                      "fill": "#0D1A2B",
+                      "cornerRadius": 20,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 18,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "p3Ji6",
+                          "name": "stat2Label",
+                          "fill": "#8DA4C2",
+                          "content": "Training consistency",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "SYLvh",
+                          "name": "stat2Value",
+                          "fill": "#F3F8FF",
+                          "content": "86%",
+                          "fontFamily": "Inter",
+                          "fontSize": 24,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "4YRPx",
+                      "name": "stat3",
+                      "width": 182,
+                      "height": "fill_container",
+                      "fill": "#0D1A2B",
+                      "cornerRadius": 20,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "padding": 18,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "FeIbp",
+                          "name": "stat3Label",
+                          "fill": "#8DA4C2",
+                          "content": "Fatigue level",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "hzZAR",
+                          "name": "stat3Value",
+                          "fill": "#F3F8FF",
+                          "content": "Moderate",
+                          "fontFamily": "Inter",
+                          "fontSize": 24,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "LogJv",
+                  "name": "Post Run Feedback",
+                  "width": "fill_container",
+                  "height": 376,
+                  "fill": "#0D1A2B",
+                  "cornerRadius": 24,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "BjO4U",
+                      "name": "feedbackTitle",
+                      "fill": "#F3F8FF",
+                      "content": "今日回饋",
+                      "fontFamily": "Inter",
+                      "fontSize": 24,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "jj7Ri",
+                      "name": "feedbackIntro",
+                      "fill": "#93A9C6",
+                      "content": "用 30 秒記錄完成度與主觀感受，明日建議會一起調整。",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Bc7mU",
+                      "name": "fbRow1",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Jz3zz",
+                          "name": "fb1Label",
+                          "fill": "#DCE7F7",
+                          "content": "完成度",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "zxPM1",
+                          "name": "fb1Track",
+                          "width": "fill_container",
+                          "height": 12,
+                          "fill": "#152B45",
+                          "cornerRadius": 999,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "sUhvS",
+                              "name": "fb1Fill",
+                              "width": 338,
+                              "height": 12,
+                              "fill": "#16F29A",
+                              "cornerRadius": 999
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "BVcVp",
+                      "name": "fbRow2",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "gli4w",
+                          "name": "fb2Label",
+                          "fill": "#DCE7F7",
+                          "content": "疲勞程度",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "ZgxWr",
+                          "name": "fb2Track",
+                          "width": "fill_container",
+                          "height": 12,
+                          "fill": "#152B45",
+                          "cornerRadius": 999,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "advgb",
+                              "name": "fb2Fill",
+                              "width": 264,
+                              "height": 12,
+                              "fill": "#3477FF",
+                              "cornerRadius": 999
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "daUHa",
+                          "name": "fb2Caption",
+                          "fill": "#8DA4C2",
+                          "content": "中等偏高，建議今晚優先恢復與睡眠",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "1zawZ",
+                      "name": "fbRow3",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "P8Cme",
+                          "name": "fb3Label",
+                          "fill": "#DCE7F7",
+                          "content": "是否推薦路線",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "e9Dik",
+                          "name": "fb3Options",
+                          "gap": 10,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "wNvHK",
+                              "name": "fb3Yes",
+                              "fill": "#163A30",
+                              "cornerRadius": 999,
+                              "padding": 12,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "rQ29Q",
+                                  "name": "fb3YesText",
+                                  "fill": "#16F29A",
+                                  "content": "推薦",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 13,
+                                  "fontWeight": "700"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "9IjCI",
+                              "name": "fb3No",
+                              "fill": "#152B45",
+                              "cornerRadius": 999,
+                              "padding": 12,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "9YYo1",
+                                  "name": "fb3NoText",
+                                  "fill": "#D2DEEE",
+                                  "content": "普通",
+                                  "fontFamily": "Inter",
+                                  "fontSize": 13,
+                                  "fontWeight": "600"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "F689J",
+                      "name": "fbRow4",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "xSvPp",
+                          "name": "fb4Label",
+                          "fill": "#DCE7F7",
+                          "content": "簡單評分",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "itUQF",
+                          "name": "fb4Stars",
+                          "gap": 8,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "RShvr",
+                              "name": "star1",
+                              "width": 24,
+                              "height": 24,
+                              "fill": "#16F29A",
+                              "cornerRadius": 12
+                            },
+                            {
+                              "type": "frame",
+                              "id": "iylNu",
+                              "name": "star2",
+                              "width": 24,
+                              "height": 24,
+                              "fill": "#16F29A",
+                              "cornerRadius": 12
+                            },
+                            {
+                              "type": "frame",
+                              "id": "Xfvz6",
+                              "name": "star3",
+                              "width": 24,
+                              "height": 24,
+                              "fill": "#16F29A",
+                              "cornerRadius": 12
+                            },
+                            {
+                              "type": "frame",
+                              "id": "rN0uk",
+                              "name": "star4",
+                              "width": 24,
+                              "height": 24,
+                              "fill": "#3477FF",
+                              "cornerRadius": 12
+                            },
+                            {
+                              "type": "frame",
+                              "id": "T0SEV",
+                              "name": "star5",
+                              "width": 24,
+                              "height": 24,
+                              "fill": "#152B45",
+                              "cornerRadius": 12
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "Zzl8S",
+      "x": 1510,
+      "y": 0,
+      "name": "Components",
+      "width": 360,
+      "height": 760,
+      "fill": "#06101C",
+      "layout": "vertical",
+      "gap": 20,
+      "padding": 20,
+      "children": [
+        {
+          "type": "frame",
+          "id": "EA16C",
+          "name": "DashboardCard",
+          "reusable": true,
+          "width": "fill_container",
+          "height": 180,
+          "fill": "#0D1A2B",
+          "cornerRadius": 24,
+          "layout": "vertical",
+          "gap": 12,
+          "padding": 20,
+          "children": [
+            {
+              "type": "text",
+              "id": "rkPPM",
+              "name": "dashCompTitle",
+              "fill": "#F3F8FF",
+              "content": "Card Title",
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "jbBlQ",
+              "name": "dashCompBody",
+              "fill": "#93A9C6",
+              "content": "Primary decision-support content lives here.",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "500"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "R7wLp",
+          "name": "RouteCard",
+          "reusable": true,
+          "width": "fill_container",
+          "height": 220,
+          "fill": "#12233A",
+          "cornerRadius": 20,
+          "layout": "vertical",
+          "gap": 12,
+          "padding": 16,
+          "children": [
+            {
+              "type": "frame",
+              "id": "UvCOz",
+              "name": "routeCompMap",
+              "width": "fill_container",
+              "height": 92,
+              "fill": "#17304B",
+              "cornerRadius": 14
+            },
+            {
+              "type": "text",
+              "id": "zACXk",
+              "name": "routeCompTitle",
+              "fill": "#F3F8FF",
+              "content": "Route Name",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "VEFnM",
+          "name": "StatCard",
+          "reusable": true,
+          "width": "fill_container",
+          "height": 120,
+          "fill": "#0D1A2B",
+          "cornerRadius": 20,
+          "layout": "vertical",
+          "gap": 8,
+          "padding": 16,
+          "children": [
+            {
+              "type": "text",
+              "id": "KmWrs",
+              "name": "statCompLabel",
+              "fill": "#8DA4C2",
+              "content": "Metric",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "cSgta",
+              "name": "statCompValue",
+              "fill": "#F3F8FF",
+              "content": "00",
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": "700"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "aZ8fg",
+      "x": 432,
+      "y": 1653,
+      "name": "RunAI Auth Dashboard Mobile",
+      "width": 390,
+      "height": 1680,
+      "fill": "#08111F",
+      "layout": "vertical",
+      "gap": 16,
+      "padding": 20,
+      "children": [
+        {
+          "type": "frame",
+          "id": "KYOUm",
+          "name": "mHeader",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 12,
+          "children": [
+            {
+              "type": "frame",
+              "id": "Rjii2",
+              "name": "mTop",
+              "width": "fill_container",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Rgerk",
+                  "name": "mLogo",
+                  "fill": "#F3F8FF",
+                  "content": "RunAI",
+                  "fontFamily": "Inter",
+                  "fontSize": 28,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "DCJuQ",
+                  "name": "mSpacer",
+                  "width": "fill_container",
+                  "height": 1,
+                  "fill": "#08111F"
+                },
+                {
+                  "type": "frame",
+                  "id": "yGuxp",
+                  "name": "mAvatar",
+                  "width": 36,
+                  "height": 36,
+                  "fill": "#1F6BFF",
+                  "cornerRadius": 18
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "OWq20",
+              "name": "mTabs",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "fjmlD",
+                  "name": "mTab1",
+                  "fill": "#16F29A",
+                  "content": "Dashboard",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "6Bjj0",
+                  "name": "mTab2",
+                  "fill": "#8DA4C2",
+                  "content": "Training",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "HvQWT",
+                  "name": "mTab3",
+                  "fill": "#8DA4C2",
+                  "content": "Routes",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "MO0I0",
+                  "name": "mTab4",
+                  "fill": "#8DA4C2",
+                  "content": "Profile",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "aiA0Y",
+          "type": "ref",
+          "ref": "EA16C",
+          "width": "fill_container",
+          "height": 220,
+          "name": "mToday",
+          "descendants": {
+            "rkPPM": {
+              "content": "今日課表"
+            },
+            "jbBlQ": {
+              "content": "Tempo 8K · 5:10-5:25/km · 控制心率，訓後記得回饋"
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "QAEg6",
+          "name": "mPrediction",
+          "width": "fill_container",
+          "height": 160,
+          "fill": "#0D1A2B",
+          "cornerRadius": 24,
+          "layout": "vertical",
+          "gap": 10,
+          "padding": 20,
+          "children": [
+            {
+              "type": "text",
+              "id": "ogrtg",
+              "name": "mPredTitle",
+              "fill": "#F3F8FF",
+              "content": "比賽預測",
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "suyrY",
+              "name": "mPredValue",
+              "fill": "#DCE7F7",
+              "content": "10K 46:51 · 目標達成 95.9%",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "dRjiC",
+          "name": "mRouteTitle",
+          "fill": "#F3F8FF",
+          "content": "今日建議路線",
+          "fontFamily": "Inter",
+          "fontSize": 22,
+          "fontWeight": "700"
+        },
+        {
+          "id": "MC5rU",
+          "type": "ref",
+          "ref": "R7wLp",
+          "width": "fill_container",
+          "height": 200,
+          "name": "mRoute1",
+          "descendants": {
+            "UvCOz": {
+              "fill": "#163A30"
+            },
+            "zACXk": {
+              "content": "河濱節奏環線"
+            }
+          }
+        },
+        {
+          "id": "hMIem",
+          "type": "ref",
+          "ref": "R7wLp",
+          "width": "fill_container",
+          "height": 200,
+          "name": "mRoute2",
+          "descendants": {
+            "UvCOz": {
+              "fill": "#17304B"
+            },
+            "zACXk": {
+              "content": "市區晨跑捷徑"
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "JeYvB",
+          "name": "mStats",
+          "width": "fill_container",
+          "height": 120,
+          "gap": 12,
+          "children": [
+            {
+              "id": "WqJbY",
+              "type": "ref",
+              "ref": "VEFnM",
+              "width": 169,
+              "height": "fill_container",
+              "name": "mStat1",
+              "descendants": {
+                "KmWrs": {
+                  "content": "This week"
+                },
+                "cSgta": {
+                  "content": "42.8 KM"
+                }
+              }
+            },
+            {
+              "id": "Dn3Rv",
+              "type": "ref",
+              "ref": "VEFnM",
+              "width": 169,
+              "height": "fill_container",
+              "name": "mStat2",
+              "descendants": {
+                "KmWrs": {
+                  "content": "Fatigue"
+                },
+                "cSgta": {
+                  "content": "Moderate"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Z1h00",
+          "name": "mFeedback",
+          "width": "fill_container",
+          "height": 220,
+          "fill": "#0D1A2B",
+          "cornerRadius": 24,
+          "layout": "vertical",
+          "gap": 10,
+          "padding": 20,
+          "children": [
+            {
+              "type": "text",
+              "id": "COWPs",
+              "name": "mFeedbackTitle",
+              "fill": "#F3F8FF",
+              "content": "今日回饋",
+              "fontFamily": "Inter",
+              "fontSize": 22,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "k6Zmx",
+              "name": "mFeedbackBody",
+              "fill": "#DCE7F7",
+              "content": "完成度 82% · 疲勞中高 · 路線推薦：是 · 評分 4/5",
+              "fontFamily": "Inter",
+              "fontSize": 15,
+              "fontWeight": "500"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

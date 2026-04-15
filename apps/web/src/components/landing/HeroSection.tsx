@@ -8,7 +8,7 @@ export function HeroSection() {
   const bars = ["h-10", "h-14", "h-[4.5rem]", "h-24"];
 
   return (
-    <section className="bg-hero pb-14 pt-6 sm:pb-20 sm:pt-8 lg:pb-24">
+    <section className="bg-hero pb-14 pt-6 sm:pb-20 sm:pt-8 lg:pb-24 border border-red-900 border-2">
       <SectionShell>
         <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(420px,540px)] lg:gap-12">
           <div className="flex flex-col gap-7 pt-8 sm:pt-12">
@@ -16,7 +16,7 @@ export function HeroSection() {
               <p className="font-caption text-[12px] uppercase tracking-[0.28em] text-[var(--accent)] sm:text-[13px]">
                 {dictionary.hero.eyebrow}
               </p>
-              <h1 className="font-heading text-balance text-5xl leading-[0.92] text-[var(--text-primary)] sm:text-6xl lg:text-8xl">
+              <h1 className="font-heading text-balance text-4xl leading-[0.92] text-[var(--text-primary)] sm:text-6xl lg:text-6xl">
                 {dictionary.hero.title}
               </h1>
               <p className="max-w-2xl text-base leading-7 text-[var(--text-secondary)] sm:text-lg sm:leading-8">
@@ -46,20 +46,20 @@ export function HeroSection() {
               <h2 className="text-lg font-semibold text-[var(--text-primary)]">
                 {dictionary.hero.dashboard.title}
               </h2>
-              <span className="rounded-full bg-[var(--accent-soft)] px-3 py-1 font-caption text-[11px] uppercase tracking-[0.18em] text-[var(--accent)]">
+              <span className="rounded-full bg-[var(--accent-soft)] px-3 py-1 font-caption text-[14px] uppercase tracking-[0.18em] text-[var(--accent)]">
                 {dictionary.hero.dashboard.badge}
               </span>
             </div>
 
             <div className="relative mt-5 grid gap-4 md:grid-cols-[260px_minmax(0,1fr)]">
               <article className="rounded-[24px] bg-[var(--surface-panel)] p-5">
-                <p className="font-caption text-[11px] uppercase tracking-[0.22em] text-[var(--text-secondary)]">
+                <p className="font-caption text-[15px] uppercase tracking-[0.22em] text-[var(--text-secondary)]">
                   {dictionary.hero.dashboard.workoutLabel}
                 </p>
-                <h3 className="mt-3 text-2xl font-semibold leading-tight text-[var(--text-primary)]">
+                <h3 className="mt-3 text-3xl font-semibold leading-tight text-[var(--text-primary)]">
                   {dictionary.hero.dashboard.workoutTitle}
                 </h3>
-                <p className="mt-3 text-sm leading-6 text-[var(--text-secondary)]">
+                <p className="mt-3 text-md leading-6 text-[var(--text-secondary)]">
                   {dictionary.hero.dashboard.workoutMeta}
                 </p>
 
@@ -100,7 +100,7 @@ export function HeroSection() {
                 </div>
 
                 <article className="rounded-[24px] border border-[var(--border-subtle)] bg-[var(--surface-panel)] p-5">
-                  <p className="font-caption text-[11px] uppercase tracking-[0.22em] text-[var(--text-secondary)]">
+                  <p className="font-caption text-[15px] uppercase tracking-[0.22em] text-[var(--text-secondary)]">
                     {dictionary.hero.dashboard.predictionLabel}
                   </p>
                   <p className="mt-3 text-2xl font-semibold text-[var(--text-primary)]">
