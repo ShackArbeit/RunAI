@@ -1,0 +1,108 @@
+Convert app-shell.pen into a scalable dashboard architecture using Next.js.
+
+TECH STACK:
+- Next.js App Router
+- TypeScript
+- Tailwind CSS
+- React Server Components where applicable
+
+--------------------------------------------------
+
+1. COMPONENT STRUCTURE (CRITICAL)
+
+Create folder:
+
+/components/members/
+
+Split into:
+
+- Header.tsx
+- TodayTrainingCard.tsx
+- RouteCard.tsx
+- RouteList.tsx
+- PredictionCard.tsx
+- StatsCard.tsx
+- FeedbackPanel.tsx
+
+--------------------------------------------------
+
+2. PAGE STRUCTURE
+
+/app/members/page.tsx
+
+Layout:
+
+<Header />
+
+<main>
+  <TodayTrainingCard />
+  <RouteList />
+  <PredictionCard />
+  <StatsCard />
+  <FeedbackPanel />
+</main>
+
+--------------------------------------------------
+
+3. DATA STRUCTURE (IMPORTANT)
+
+Create mock data layer:
+
+/lib/mock-data.ts
+
+Example:
+
+- todayTraining
+- routes
+- predictions
+- stats
+
+--------------------------------------------------
+
+4. STATE MANAGEMENT
+
+- Use React hooks (useState / useEffect)
+- Prepare for React Query integration
+
+--------------------------------------------------
+
+5. UI PATTERN
+
+- Card-based design
+- Each feature = 1 component
+- Avoid mixing logic and UI
+
+--------------------------------------------------
+
+6. DESIGN SYSTEM
+
+- Extract shared UI:
+  /components/ui/
+
+- Button
+- Card
+- Badge
+
+--------------------------------------------------
+
+7. I18N READY
+
+- All text externalized
+- No hardcoded Chinese
+
+--------------------------------------------------
+
+8. DARK MODE
+
+- Use Tailwind dark mode
+
+--------------------------------------------------
+
+IMPORTANT:
+
+- This is NOT an admin dashboard
+- This is a decision-driven UI
+- Focus on "today-first experience"
+
+- DO NOT create one big dashboard.tsx
+- MUST split into small components
