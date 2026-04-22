@@ -41,3 +41,7 @@ next-env.d.ts
 
 # Python venv
 apps/api/.venv/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
