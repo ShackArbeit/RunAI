@@ -1,10 +1,15 @@
-"use client";
-
-import { useLanding } from "@/components/landing/LandingProvider";
+import type { LandingDictionary } from "@/components/landing/dictionary";
 import { MetricCard, SectionHeading, SectionShell } from "@/components/landing/shared";
 
-function TrustSection() {
-  const { dictionary } = useLanding();
+type RouteSectionProps = {
+  dictionary: LandingDictionary;
+};
+
+type TrustSectionProps = {
+  dictionary: LandingDictionary;
+};
+
+function TrustSection({ dictionary }: TrustSectionProps) {
 
   return (
     <div className="space-y-10 pt-20 sm:pt-24 lg:pt-28">
@@ -23,9 +28,7 @@ function TrustSection() {
   );
 }
 
-export function RouteSection() {
-  const { dictionary } = useLanding();
-
+export function RouteSection({ dictionary }: RouteSectionProps) {
   return (
     <section>
       <SectionShell className="py-20 sm:py-24 lg:py-28">
@@ -78,7 +81,7 @@ export function RouteSection() {
           </div>
         </div>
 
-        <TrustSection />
+        <TrustSection dictionary={dictionary} />
       </SectionShell>
     </section>
   );

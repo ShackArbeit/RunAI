@@ -1,10 +1,11 @@
-"use client";
-
-import { useLanding } from "@/components/landing/LandingProvider";
+import type { LandingDictionary } from "@/components/landing/dictionary";
 import { ActionButton, SectionShell } from "@/components/landing/shared";
 
-export function CTASection() {
-  const { dictionary } = useLanding();
+type CTASectionProps = {
+  dictionary: LandingDictionary;
+};
+
+export function CTASection({ dictionary }: CTASectionProps) {
 
   return (
     <SectionShell id="pricing" className="pb-20 sm:pb-24 lg:pb-28">

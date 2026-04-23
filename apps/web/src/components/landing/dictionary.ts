@@ -1,74 +1,18 @@
-export type Locale = "zh" | "en" | "de";
+export const locales = ["zh", "en", "de"] as const;
 
-export const locales: Locale[] = ["zh", "en", "de"];
+export type Locale = (typeof locales)[number];
 
-/**
- * 將型別中的「string literal（例如 "zh"）」轉為「一般 string」
- * 並且支援：
- * - 陣列（array / tuple）
- * - 物件（object）
- * - 深層遞迴（deep recursive）
- */
-type WidenLiteralStrings<T> =
+export const localeLabels: Record<Locale, string> = {
+  zh: "中文",
+  en: "EN",
+  de: "DE",
+};
 
-  /**
-   * 🧩 Case 1：如果 T 是 string（包含 literal type）
-   *
-   * T extends string：
-   * - "zh" extends string ✅
-   * - string extends string ✅
-   *
-   * 👉 統一轉成 string（達到 widening）
-   */
-  T extends string
-    ? string
-
-    /**
-     * 🧩 Case 2：如果 T 是 readonly 陣列（包含 tuple）
-     *
-     * readonly (infer U)[]
-     *
-     * 👉 infer U：
-     *    把「陣列元素型別」抽出來
-     *
-     * 例如：
-     *   readonly ["zh", "en"]
-     * 👉 U = "zh" | "en"
-     *
-     * 再對每個元素做遞迴轉換
-     *
-     * ⚠️ 保留 readonly 是刻意的（immutable 設計）
-     */
-    : T extends readonly (infer U)[]
-      ? readonly WidenLiteralStrings<U>[]
-
-      /**
-       * 🧩 Case 3：如果 T 是 object（物件）
-       *
-       * 👉 使用 mapped type 遍歷每個 key
-       *
-       * keyof T：
-       *   取得所有 key
-       *
-       * [K in keyof T]：
-       *   對每個 key 做轉換
-       *
-       * 👉 每個 value 再遞迴呼叫 WidenLiteralStrings
-       *
-       * ⚠️ 加上 readonly：
-       *   保持資料不可變（immutable pattern）
-       */
-      : T extends object
-        ? {
-            readonly [K in keyof T]: WidenLiteralStrings<T[K]>
-          }
-
-        /**
-         * 🧩 Case 4：其他型別（number / boolean / null / undefined / function）
-         *
-         * 👉 完全不變
-         */
-        : T;
+const localeToHtmlLangMap: Record<Locale, string> = {
+  zh: "zh-Hant",
+  en: "en",
+  de: "de",
+};
 
 export const dict = {
   zh: {
@@ -80,6 +24,7 @@ export const dict = {
       startTraining: "開始訓練",
       languageLabel: "語言切換",
       themeLabel: "主題切換",
+      authLabel: "註冊",
     },
     hero: {
       eyebrow: "ADAPTIVE RUNNING OS",
@@ -204,6 +149,7 @@ export const dict = {
       startTraining: "Start Training",
       languageLabel: "Switch language",
       themeLabel: "Toggle theme",
+      authLabel: "Sign up",
     },
     hero: {
       eyebrow: "ADAPTIVE RUNNING OS",
@@ -328,6 +274,7 @@ export const dict = {
       startTraining: "Training starten",
       languageLabel: "Sprache wechseln",
       themeLabel: "Theme wechseln",
+      authLabel: "Registrieren",
     },
     hero: {
       eyebrow: "ADAPTIVE RUNNING OS",
@@ -455,4 +402,16 @@ export const dict = {
   },
 } as const;
 
-export type LandingDictionary = WidenLiteralStrings<(typeof dict)["zh"]>;
+export type LandingDictionary = (typeof dict)[Locale];
+
+export function isLocale(value: string): value is Locale {
+  return value === "zh" || value === "en" || value === "de";
+}
+
+export function getDictionary(locale: Locale): LandingDictionary {
+  return dict[locale];
+}
+
+export function getHtmlLang(locale: Locale) {
+  return localeToHtmlLangMap[locale];
+}

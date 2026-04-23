@@ -1,4 +1,3 @@
-APP_NAME = "My Platform API"
+APP_NAME = "RunAI API"
 APP_VERSION = "0.1.0"
 API_V1_PREFIX = "/v1"
-

@@ -1,6 +1,4 @@
-"use client";
-
-import { useLanding } from "@/components/landing/LandingProvider";
+import type { LandingDictionary } from "@/components/landing/dictionary";
 import { SectionHeading, SectionShell } from "@/components/landing/shared";
 
 const featureIcons = ["📅✨ ", "🏃‍♂️📍", "🏆📊"] as const;
@@ -27,8 +25,11 @@ function FeatureCard({
   );
 }
 
-export function FeatureSection() {
-  const { dictionary } = useLanding();
+type FeatureSectionProps = {
+  dictionary: LandingDictionary;
+};
+
+export function FeatureSection({ dictionary }: FeatureSectionProps) {
 
   return (
     <SectionShell id="features" className="border-4 border-blue-900 py-20 sm:py-24 lg:py-28">

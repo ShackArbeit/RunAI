@@ -3,9 +3,9 @@ from app.core.config import settings
 
 
 def get_runtime_meta():
-    return {
-        "app_name": APP_NAME,
-        "environment": settings.app_env,
-        "version": APP_VERSION,
-        "runtime": "fastapi",
-    }
+    runtime_meta = {}
+    runtime_meta["app_name"] = APP_NAME
+    runtime_meta["environment"] = settings.app_env
+    runtime_meta["version"] = APP_VERSION
+    runtime_meta["runtime"] = "fastapi"
+    return runtime_meta

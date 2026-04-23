@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# RunAI Web
 
-## Getting Started
+這是 RunAI 的前端，使用 Next.js App Router。
 
-First, run the development server:
+## 目前內容
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- landing page
+- `/members` demo page
+- landing page 採 `app/[locale]` 多語系路由
+- landing page 大部分是 server component
+- theme toggle 是少數 client-side 元件
+
+## 路由
+
+- `/`
+  - 會導到預設語系首頁
+- `/zh`
+- `/en`
+- `/de`
+- `/members`
+
+## 資料夾
+
+### `src/app`
+
+- `page.tsx`
+  - 首頁 redirect
+- `[locale]/page.tsx`
+  - 組裝 landing page
+- `members/page.tsx`
+  - 組裝 members page
+- `layout.tsx`
+  - 全域 layout
+
+### `src/components/landing`
+
+首頁各區塊與 dictionary 都在這裡。
+
+### `src/components/members`
+
+`/members` 的畫面元件都在這裡。
+
+### `src/lib`
+
+- `mock-data.ts`
+- `api.ts`
+- `env.ts`
+
+## 本地啟動
+
+在 repo root：
+
+```powershell
+pnpm.cmd run dev --filter web
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+或在 `apps/web`：
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```powershell
+pnpm.cmd dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+打開：
 
-## Learn More
+- `http://localhost:3000/`
+- `http://localhost:3000/zh`
+- `http://localhost:3000/members`
 
-To learn more about Next.js, take a look at the following resources:
+## 常用指令
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+在 `apps/web`：
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```powershell
+pnpm.cmd dev
+pnpm.cmd build
+pnpm.cmd lint
+```

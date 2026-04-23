@@ -1,6 +1,4 @@
-"use client";
-
-import { useLanding } from "@/components/landing/LandingProvider";
+import type { LandingDictionary } from "@/components/landing/dictionary";
 import { SectionHeading, SectionShell } from "@/components/landing/shared";
 
 function StepCard({
@@ -23,8 +21,11 @@ function StepCard({
   );
 }
 
-export function HowItWorksSection() {
-  const { dictionary } = useLanding();
+type HowItWorksSectionProps = {
+  dictionary: LandingDictionary;
+};
+
+export function HowItWorksSection({ dictionary }: HowItWorksSectionProps) {
 
   return (
     <SectionShell id="how-it-works" className="py-20 sm:py-24 lg:py-28">

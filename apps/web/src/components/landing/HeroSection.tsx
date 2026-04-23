@@ -1,10 +1,11 @@
-"use client";
-
-import { useLanding } from "@/components/landing/LandingProvider";
+import type { LandingDictionary } from "@/components/landing/dictionary";
 import { ActionButton, MetricCard, SectionShell } from "@/components/landing/shared";
 
-export function HeroSection() {
-  const { dictionary } = useLanding();
+type HeroSectionProps = {
+  dictionary: LandingDictionary;
+};
+
+export function HeroSection({ dictionary }: HeroSectionProps) {
   const bars = ["h-10", "h-14", "h-[4.5rem]", "h-24"];
 
   return (

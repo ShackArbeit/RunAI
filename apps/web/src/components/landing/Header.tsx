@@ -1,17 +1,20 @@
-"use client";
-
-import { useLanding } from "@/components/landing/LandingProvider";
+import {
+  localeLabels,
+  locales,
+  type LandingDictionary,
+  type Locale,
+} from "@/components/landing/dictionary";
+import { MobileMenu } from "@/components/landing/MobileMenu";
 import { ActionButton, SectionShell } from "@/components/landing/shared";
+import { ThemeToggle } from "@/components/landing/ThemeToggle";
+import Link from "next/link";
 
-const localeLabels = {
-  zh: "中文",
-  en: "EN",
-  de: "DE",
-} as const;
+type HeaderProps = {
+  dictionary: LandingDictionary;
+  locale: Locale;
+};
 
-export function Header() {
-  const { dictionary, locale, locales, setLocale, theme, toggleTheme } = useLanding();
-
+export function Header({ dictionary, locale }: HeaderProps) {
   return (
     <header className="sticky top-0 z-50 bg-transparent backdrop-blur">
       <SectionShell className="pt-5">
@@ -46,40 +49,38 @@ export function Header() {
                 role="group"
               >
                 {locales.map((item) => (
-                  <button
+                  <Link
                     key={item}
                     className={`rounded-full px-3 py-1.5 text-md font-medium transition-colors ${
                       locale === item
                         ? "bg-[var(--surface-muted)] text-[var(--text-primary)]"
                         : "text-[var(--text-secondary)] hover:text-[var(--text-primary)]"
                     }`}
-                    onClick={() => setLocale(item)}
-                    type="button"
+                    href={`/${item}`}
                   >
                     {localeLabels[item]}
-                  </button>
+                  </Link>
                 ))}
               </div>
 
-              <button
-                aria-label={dictionary.nav.themeLabel}
-                className="flex items-center gap-2 rounded-full border border-[var(--border-subtle)] bg-[var(--surface-soft)] px-3 py-2 text-md text-[var(--text-secondary)] transition-colors hover:text-[var(--text-primary)]"
-                onClick={toggleTheme}
-                type="button"
-              >
-                <span>{theme === "dark" ? "◐" : "◑"}</span>
-                <span>{theme === "dark" ? "Dark" : "Light"}</span>
-              </button>
+              <ThemeToggle label={dictionary.nav.themeLabel} />
 
               <a href="#cta">
                 <ActionButton>{dictionary.nav.startTraining}</ActionButton>
               </a>
+              <a href="#cta">
+                <ActionButton variant="secondary">
+                  {dictionary.nav.authLabel}
+                </ActionButton>
+              </a>
             </div>
           </div>
 
-          <a className="lg:hidden" href="#cta">
+          <a className="hidden min-[476px]:block lg:hidden" href="#cta">
             <ActionButton>{dictionary.nav.startTraining}</ActionButton>
           </a>
+
+          <MobileMenu dictionary={dictionary} locale={locale} />
         </div>
       </SectionShell>
     </header>

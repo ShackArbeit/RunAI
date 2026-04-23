@@ -1,10 +1,13 @@
-"use client";
-
-import { useLanding } from "@/components/landing/LandingProvider";
+import type { LandingDictionary, Locale } from "@/components/landing/dictionary";
 import { SectionShell } from "@/components/landing/shared";
+import Link from "next/link";
 
-export function Footer() {
-  const { dictionary } = useLanding();
+type FooterProps = {
+  dictionary: LandingDictionary;
+  locale: Locale;
+};
+
+export function Footer({ dictionary, locale }: FooterProps) {
 
   return (
     <footer className="pb-8">
@@ -16,15 +19,24 @@ export function Footer() {
           </div>
 
           <nav aria-label="Footer" className="flex flex-wrap gap-4 sm:justify-end">
-            {dictionary.footer.links.map((link) => (
-              <a
-                key={link}
-                className="text-lg transition-colors hover:text-[var(--text-primary)]"
-                href="#top"
-              >
-                {link}
-              </a>
-            ))}
+            <a
+              className="text-lg transition-colors hover:text-[var(--text-primary)]"
+              href="#features"
+            >
+              {dictionary.footer.links[0]}
+            </a>
+            <a
+              className="text-lg transition-colors hover:text-[var(--text-primary)]"
+              href="#pricing"
+            >
+              {dictionary.footer.links[1]}
+            </a>
+            <Link
+              className="text-lg transition-colors hover:text-[var(--text-primary)]"
+              href={`/${locale}`}
+            >
+              {dictionary.footer.links[2]}
+            </Link>
           </nav>
         </div>
       </SectionShell>

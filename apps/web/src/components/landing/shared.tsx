@@ -23,6 +23,15 @@ type ActionButtonProps = {
   variant?: "primary" | "secondary";
 };
 
+type AuthButtonProps={
+   isLoggined:boolean
+   loginText:string
+   isLoggouted:boolean
+   logoutText:string
+   onLogin?:()=>void
+   onLogout?:()=>void
+}
+
 function classes(...values: Array<string | false | null | undefined>) {
   return values.filter(Boolean).join(" ");
 }
@@ -100,4 +109,16 @@ export function ActionButton({
       {children}
     </span>
   );
+}
+
+
+export function AuthButton({
+   isLoggined,
+   loginText,
+   isLoggouted,
+   logoutText,
+   onLogin,
+   onLogout,
+}:AuthButtonProps){
+    
 }
