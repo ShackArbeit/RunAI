@@ -70,7 +70,7 @@ export function Header({ dictionary, locale }: HeaderProps) {
               </a>
               <a href="#cta">
                 <ActionButton variant="secondary">
-                  {dictionary.nav.authLabel}
+                  {dictionary.nav.logoutLabel}
                 </ActionButton>
               </a>
             </div>

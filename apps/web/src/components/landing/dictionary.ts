@@ -24,7 +24,7 @@ export const dict = {
       startTraining: "開始訓練",
       languageLabel: "語言切換",
       themeLabel: "主題切換",
-      authLabel: "註冊",
+      logoutLabel: "登出"
     },
     hero: {
       eyebrow: "ADAPTIVE RUNNING OS",
@@ -149,7 +149,7 @@ export const dict = {
       startTraining: "Start Training",
       languageLabel: "Switch language",
       themeLabel: "Toggle theme",
-      authLabel: "Sign up",
+      logoutLabel: "Logout",
     },
     hero: {
       eyebrow: "ADAPTIVE RUNNING OS",
@@ -274,7 +274,7 @@ export const dict = {
       startTraining: "Training starten",
       languageLabel: "Sprache wechseln",
       themeLabel: "Theme wechseln",
-      authLabel: "Registrieren",
+      logoutLabel: "Logout",
     },
     hero: {
       eyebrow: "ADAPTIVE RUNNING OS",

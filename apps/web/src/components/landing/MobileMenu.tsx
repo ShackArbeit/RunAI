@@ -101,7 +101,7 @@ export function MobileMenu({ dictionary, locale }: MobileMenuProps) {
               </a>
               <a href="#cta" onClick={closeMenu}>
                 <ActionButton variant="secondary">
-                  {dictionary.nav.authLabel}
+                  {dictionary.nav.logoutLabel}
                 </ActionButton>
               </a>
             </div>

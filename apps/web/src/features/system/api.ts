@@ -1,6 +1,5 @@
 import { getApiBaseUrl } from "@/lib/env";
-import type { HealthResponse, RuntimeMetaResponse } from "@/types/api";
-
+import type { HealthResponse, RuntimeMetaResponse } from "@/features/system/types";
 
 async function apiFetch<T>(path: string, init?: RequestInit): Promise<T> {
   const response = await fetch(`${getApiBaseUrl()}${path}`, {
@@ -19,11 +18,9 @@ async function apiFetch<T>(path: string, init?: RequestInit): Promise<T> {
   return (await response.json()) as T;
 }
 
-
 export function getHealth(): Promise<HealthResponse> {
   return apiFetch<HealthResponse>("/v1/health");
 }
-
 
 export function getRuntimeMeta(): Promise<RuntimeMetaResponse> {
   return apiFetch<RuntimeMetaResponse>("/v1/meta/runtime");
