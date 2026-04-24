@@ -7,7 +7,9 @@ import {
 import { MobileMenu } from "@/components/landing/MobileMenu";
 import { ActionButton, SectionShell } from "@/components/landing/shared";
 import { ThemeToggle } from "@/components/landing/ThemeToggle";
+import { HeaderAuthActions } from "./HeaderAuthActions";
 import Link from "next/link";
+
 
 type HeaderProps = {
   dictionary: LandingDictionary;
@@ -65,14 +67,10 @@ export function Header({ dictionary, locale }: HeaderProps) {
 
               <ThemeToggle label={dictionary.nav.themeLabel} />
 
-              <a href="#cta">
-                <ActionButton>{dictionary.nav.startTraining}</ActionButton>
-              </a>
-              <a href="#cta">
-                <ActionButton variant="secondary">
-                  {dictionary.nav.logoutLabel}
-                </ActionButton>
-              </a>
+              <HeaderAuthActions
+                logoutLabel={dictionary.nav.logoutLabel}
+                startTrainingLabel={dictionary.nav.startTraining}
+              />
             </div>
           </div>
 

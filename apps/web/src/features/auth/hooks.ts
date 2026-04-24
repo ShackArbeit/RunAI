@@ -16,7 +16,6 @@ export function useLogoutMutation() {
 
   return useMutation({
     mutationFn: logout,
-
     onSuccess: (authState: AuthState) => {
       queryClient.setQueryData(authQueryKeys.all, authState);
     },

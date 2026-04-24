@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getHtmlLang, isLocale, type Locale } from "@/components/landing/dictionary";
 import { cookies } from "next/headers";
+import { QueryProvider } from "@/components/providers/QueryProvider";
 
 import "./globals.css";
 
@@ -31,7 +32,10 @@ export default async function RootLayout({
       suppressHydrationWarning
     >
       <body className="h-full bg-[var(--surface)] font-body text-[var(--text-primary)] antialiased">
-        {children}
+          <QueryProvider>
+               {children}
+          </QueryProvider>
+        
       </body>
     </html>
   );

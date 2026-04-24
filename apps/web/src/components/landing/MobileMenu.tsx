@@ -6,10 +6,11 @@ import {
   type LandingDictionary,
   type Locale,
 } from "@/components/landing/dictionary";
-import { ActionButton } from "@/components/landing/shared";
+import { HeaderAuthActions } from "@/components/landing/HeaderAuthActions";
 import { ThemeToggle } from "@/components/landing/ThemeToggle";
 import Link from "next/link";
 import { useState } from "react";
+import { createPortal } from "react-dom";
 
 type MobileMenuProps = {
   dictionary: LandingDictionary;
@@ -24,19 +25,33 @@ export function MobileMenu({ dictionary, locale }: MobileMenuProps) {
   }
 
   return (
-    <div className="min-[476px]:hidden">
+    <div className="block min-[476px]:hidden">
       <button
         aria-expanded={isOpen}
         aria-label="Open navigation menu"
-        className="flex h-12 w-12 items-center justify-center rounded-2xl border border-[var(--border-subtle)] bg-[var(--surface-soft)] text-[var(--text-primary)] transition-colors hover:border-[var(--accent)]"
+        className="relative z-[70] flex h-12 w-12 items-center justify-center rounded-2xl border border-[var(--border-subtle)] bg-[var(--surface-soft)] text-[var(--text-primary)] transition-colors hover:border-[var(--accent)]"
         onClick={() => setIsOpen((current) => !current)}
         type="button"
       >
-        <span className="text-2xl leading-none">{isOpen ? "×" : "☰"}</span>
+        <span className="relative h-5 w-5" aria-hidden="true">
+          {isOpen ? (
+            <>
+              <span className="absolute left-1/2 top-1/2 h-0.5 w-5 -translate-x-1/2 -translate-y-1/2 rotate-45 rounded-full bg-current" />
+              <span className="absolute left-1/2 top-1/2 h-0.5 w-5 -translate-x-1/2 -translate-y-1/2 -rotate-45 rounded-full bg-current" />
+            </>
+          ) : (
+            <>
+              <span className="absolute left-0 top-1 h-0.5 w-5 rounded-full bg-current" />
+              <span className="absolute left-0 top-1/2 h-0.5 w-5 -translate-y-1/2 rounded-full bg-current" />
+              <span className="absolute left-0 bottom-1 h-0.5 w-5 rounded-full bg-current" />
+            </>
+          )}
+        </span>
       </button>
 
-      {isOpen ? (
-        <div className="fixed inset-0 z-50 bg-[color:rgba(8,19,31,0.45)] backdrop-blur-sm">
+      {typeof document !== "undefined" && isOpen
+        ? createPortal(
+            <div className="fixed inset-0 z-[60] bg-[color:rgba(8,19,31,0.45)] backdrop-blur-sm">
           <div className="surface-panel flex h-full w-full flex-col gap-6 overflow-y-auto px-5 py-5">
             <div className="flex items-center justify-between">
               <span className="font-heading text-4xl text-[var(--text-primary)]">
@@ -48,7 +63,10 @@ export function MobileMenu({ dictionary, locale }: MobileMenuProps) {
                 onClick={closeMenu}
                 type="button"
               >
-                <span className="text-2xl leading-none">×</span>
+                <span className="relative h-5 w-5" aria-hidden="true">
+                  <span className="absolute left-1/2 top-1/2 h-0.5 w-5 -translate-x-1/2 -translate-y-1/2 rotate-45 rounded-full bg-current" />
+                  <span className="absolute left-1/2 top-1/2 h-0.5 w-5 -translate-x-1/2 -translate-y-1/2 -rotate-45 rounded-full bg-current" />
+                </span>
               </button>
             </div>
 
@@ -96,18 +114,18 @@ export function MobileMenu({ dictionary, locale }: MobileMenuProps) {
             <ThemeToggle label={dictionary.nav.themeLabel} />
 
             <div className="mt-auto flex flex-col gap-3 pb-4">
-              <a href="#cta" onClick={closeMenu}>
-                <ActionButton>{dictionary.nav.startTraining}</ActionButton>
-              </a>
-              <a href="#cta" onClick={closeMenu}>
-                <ActionButton variant="secondary">
-                  {dictionary.nav.logoutLabel}
-                </ActionButton>
-              </a>
+              <HeaderAuthActions
+                direction="column"
+                logoutLabel={dictionary.nav.logoutLabel}
+                onAction={closeMenu}
+                startTrainingLabel={dictionary.nav.startTraining}
+              />
             </div>
           </div>
-        </div>
-      ) : null}
+            </div>,
+            document.body,
+          )
+        : null}
     </div>
   );
 }
